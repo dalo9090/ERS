@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>평가위원회 상세화면 &gt; SG-ERS 평가관리시스템</title>
+<link type="text/css" rel="stylesheet" href="../../css/reset.css">
+<link type="text/css" rel="stylesheet" href="../../css/header.css">
+<link type="text/css" rel="stylesheet" href="../../css/common.css">
+<link type="text/css" rel="stylesheet" href="../../css/sub.css"> <!-- 서브에서만 사용 -->
+<link type="text/css" rel="stylesheet" href="../../css/contents.css">
+<link type="text/css" rel="stylesheet" href="../../css/footer.css">
+<script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script> <!-- 기본 스크립트 -->
+<script type="text/javascript" src="../../js/common.js"></script> <!-- 공통 스크립트 -->
+
+
+
+
+
+</head>
+
+<body class="survey_body">
+	<div class="survey_wrap">
+		<div class="survey_all_bg">
+			<div class="survey_all">
+				<div class="survey_header">
+					<h2>평가위원회 미참가</h2>
+				</div>
+				 <!-- 20230214 survey_not 추가 start -->
+				<div class="survey_contents survey_not">
+					<div class="survey_con_box">
+						<div class="survey_con_top bg_red">
+							<h3>미참가 사유</h3>
+						</div>
+						<div class="survey_con_box">
+							<div class="survey_con_center">
+					<div class="basic_tb t_row">
+					<table>
+						<caption>
+							평가위원회 참석불가 신청 테이블입니다.
+						</caption>
+						<colgroup>
+							<col style="width:16%;">
+							<col style="width:auto;">
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="col">유형</th>
+								<td data-title="유형">
+								<label for="sel_Word1">유형</label>
+								<select class="select w20" id="sel_Word1" title="유형">
+									<option value="유형" selected="selected">::유형::</option>
+									<option value="a1">병가</option>
+									<option value="a2">긴급업무</option>
+									<option value="a2">긴급출장</option>
+									<option value="a2">기타</option>
+								</select>
+							</td>		
+						
+						</tr>
+						<tr>
+							<th scope="col">작성자</th>
+							<td data-title="작성자">
+								<label for="textWord1">작성자</label>
+								<input class="w100" type="text" id="textWord1" name="textWord" title="작성자" value="김하나">
+							</td>
+						</tr>
+						
+						<tr>
+							<th scope="col">미참가 사유</th>
+							<td data-title="미참가 사유">
+								<label for="textWord3">미참가 사유</label>
+								<textarea id="comment" cols="50" rows="10" wrap="hard" required="required" title="내용을 입력해주세요" placeholder="상세한 미참가 사유를 입력해주세요."></textarea>
+							</td>
+						</tr>
+						</tbody>
+					</table>        
+				</div>
+					<div class="btn_box_wrap">
+						<a href="#" class="btn_big bg_red" role="button" onclick="window.close()">미참가 신청</a>
+						<a href="99_survey.html" class="btn_big bg_gray" role="button">이전화면</a>
+					</div>
+			
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- 20230214 survey_not 추가 end -->
+			</div>
+		</div>
+		
+		</div>
+
+
+
+</body>
+	
+</html>
