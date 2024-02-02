@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사후평가 목록화면 &gt;SG-ERS 평가관리시스템</title>
+<link type="text/css" rel="stylesheet" href="../../css/reset.css">
+<link type="text/css" rel="stylesheet" href="../../css/header.css">
+<link type="text/css" rel="stylesheet" href="../../css/common.css">
+<link type="text/css" rel="stylesheet" href="../../css/sub.css"> <!-- 서브에서만 사용 -->
+<link type="text/css" rel="stylesheet" href="../../css/contents.css">
+<link type="text/css" rel="stylesheet" href="../../css/footer.css">
+<script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script> <!-- 기본 스크립트 -->
+<script type="text/javascript" src="../../js/common.js"></script> <!-- 공통 스크립트 -->
+<script type="text/javascript" src="../../js/jquery-migrate-1.4.1.min.js"></script> <!-- 헤더영역1/3 -->
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script> <!-- 헤더영역2/3 -->
+<script type="text/javascript" src="../../js/acego.gnb.js"></script> <!-- 헤더영역3/3 -->
+<script type="text/javascript" src="../../js/drop.js"></script> <!-- 위치정보 열림 -->
+<script type="text/javascript" src="../../js/pop.js"></script> <!-- 팝업 스크f립트-->
+</head>
+
+<body>
+	<!-- skipNavigation-->
+	<div class="skipToContent">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<div id="dimed" style="opacity: 1; display: none;"></div>
+	<!-- //skipNavigation -->
+		<div class="sub_wrap">
+	<header>
+	</header>
+	<script>
+	$("header").load("../navi_area_manage.html")
+	</script>
+
+
+		<div class="container_wrap sub_bg">
+			<div class="location_wrap">
+		<div class="location_nav">
+			<ul>
+				<li><a href="#"><i class="xi-home"><span class="text_ind">홈으로</span></i></a></li>
+				<li><a href="#">사후관리</a></li>
+				<li><a href="#" class="on">사후평가</a></li>
+			</ul>
+		</div>
+		<!-- 모바일 전용 위치정보 start -->
+		<div id="mo_location_nav" class="cm-top-menu clearfix">
+				<div class="side-menu-inner clearfix">
+					<a href="#" class="location-to-home-btn" title="메인으로"><i class="xi-home"></i></a>
+						<div class="menu-location location2 cm-drop-menu-box-JS" data-drop-event="click">
+			<button class="cur-location cm-drop-open-btn-JS">
+				<span>사후평가</span>
+			</button>
+		</div>
+
+				</div>
+			</div>
+	<!-- 모바일 전용 위치정보 end -->
+		</div>
+			<div class="sub_title_area">
+				<h2>사후평가</h2>
+			</div>
+		</div>
+		
+		
+		
+		<div class="container_box_sub">
+			<div class="contents_divide">
+				<section>
+					<div class="search_table">
+						<table>
+							<caption>평가위원회 목록 테이블입니다.</caption>
+							<colgroup>
+								<col style="width:15%;">
+								<col style="width:40%;">
+								<col style="width:15%;">
+								<col style="width:25%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>평가일</th>
+<td>
+									<label for="textWord4">평가일</label>
+									<input type="text" id="textWord4_1" name="textWord" class="calendar_size" title="평가일시작" placeholder="평가시작일">
+									<a href="#"><img src="../../images/sub/icon_calendar.png" alt="달력"></a>
+									<span class="pl10 pr10 bold fs_1_5">~</span>
+									<label for="textWord4_2">평가일</label>
+									<input type="text" id="textWord4_2" name="textWord" class="calendar_size" title="평가일종료" placeholder="평가종료일">
+									<a href="#"><img src="../../images/sub/icon_calendar.png" alt="달력"></a>
+
+									</td>									<th>평가명</th>
+									<td colspan="3">
+										<label for="textWord3">평가명</label>
+										<input class="w100" type="text" id="textWord3" name="textWord" title="평가명" placeholder="평가명">
+									</td>
+									
+								</tr>
+								<tr>
+									<th>소속기관</th>
+									<td>
+										<label for="textWord3_1">소속기관</label>
+										<input class="w100" type="text" id="textWord3_1" name="textWord" title="소속기관" placeholder="소속기관">
+									</td>
+									<th>이름</th>
+									<td>
+										<label for="textWord2">이름</label>
+										<input class="w100" type="text" id="textWord2" name="textWord" title="이름" placeholder="이름">
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+						<div class="st_search_btn"><a href="#" role="button">검색</a></div>
+					</div>			
+				</section>
+				
+				
+			
+				<!-- 테이블 가로 영역 -->
+				<section>
+					<div class="content_title">
+						<h3 class="title_list">사후평가대상 목록</h3>
+						<p class="list_total">총<span>2건</span>이 검색되었습니다.</p>
+						<div class="cont_right_box">
+							<a href="09_01_manage_afterCommittee_list.html" class="btn_basic bg_blue" role="button">사후평가등록</a>
+																<p class="fr ml05 number_look">	<label for="sel_Word4_23">목록 개수 보기</label>
+										<select class="select w100" id="sel_Word4_23" title="목록 개수 보기">
+											<option value="상태" selected="selected">10개씩 보기</option>
+											<option value="progress">20개씩 보기</option>
+											<option value="stop">30개씩 보기</option>
+											<option value="progress">40개씩 보기</option>
+										</select>
+									</p>
+
+						</div>
+					</div>
+
+					<div class="basic_tb">
+					<table>
+						<caption>기본테이블에 관련된 정보를 확인 하실수 있습니다.</caption>
+						<colgroup>
+							<col style="width:7%;">
+							<col style="width:15%;">
+							<col style="width:7%;">
+							<col style="width:7%;">
+							<col style="width:5%;">
+							<col style="width:5%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th rowspan="2" scope="col">평가일</th>
+								<th rowspan="2" scope="col">평가명</th>
+								<th colspan="2" scope="col">평가위원</th>
+								<th rowspan="2" scope="col">점수</th>
+								<th rowspan="2" scope="col">조회</th>
+							</tr>
+							<tr class="table_row">
+							  <th scope="col">소속기관</th>
+							  <th scope="col">이름</th>
+					      </tr>
+						</thead>
+						<tbody>
+								<tr>
+									<td data-title="평가일">2024-01-30</td>
+									<td data-title="평가명" class="choice_name">구축지원 기능개발 콘텐츠 선정평가위원회</td>
+									<td data-title="소속기관">나라사랑게이트</td>
+									<td data-title="이름">김하나</td>
+									<td data-title="점수"><span class="f_blue bold">-20점</span></td>
+									<td data-title="조회"><a href="09_02_manage_afterCommittee_list.html" class="btn_basic_line line_gray">조회</a></td>
+								</tr>
+								<tr>
+									<td data-title="평가일">2024-02-15</td>
+									<td data-title="평가명" class="choice_name">기능개발 콘텐츠 선정평가위원회</td>
+									<td data-title="소속기관">티디아(주)</td>
+									<td data-title="이름">이하연</td>
+									<td data-title="점수"><span class="f_blue bold">-30점</span></td>
+									<td data-title="조회"><a href="09_02_manage_afterCommittee_list_ex.html" class="btn_basic_line line_gray">조회</a></td>
+								</tr>
+			
+						</tbody>
+					</table>
+				</div>			
+				</section>
+				
+				
+				
+			
+				<section>
+					<div class="paging tc">
+						<a href="#" class="page_first"><span class="hidden">맨앞으로</span></a>
+						<a href="#" class="page_prev"><span class="hidden">이전</span></a>
+						<strong>1</strong>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+						<a href="#" class="pagen_ext"><span class="hidden">다음</span></a>
+						<a href="#" class="page_last"><span class="hidden">마지막</span></a>
+					</div>
+				</section>
+				
+				
+				
+				
+			</div>
+		</div>
+		
+	
+<footer id="nFooter">
+	</footer>
+	<script>
+		$('#nFooter').load('../footer_area.html')	 
+	</script>
+	</div>
+
+	<!-- 스크립트 영역 공통 (모바일 메뉴 영역) -->
+	<script>
+	(function () {
+		var param = "#gnb_layout",
+			obj = ".item",
+			btn = ".th1_lnk",
+			wrap = "#top_layout",
+			dur = 300,
+			meth = "easeOutCubic";
+		gnb(param, obj, btn, wrap, dur, meth);
+		gnb_open();
+	}());
+	$(function () {
+		$("[data-print=print]").on('click', function () {
+			$("#txt").print({
+				globalStyles: true,
+				mediaPrint: false,
+				iframe: true,
+				noPrintSelector: ".avoid-this",
+				deferred: $.Deferred().done(function () {
+					console.log('Printing done', arguments);
+				})
+			});
+		});
+	});
+	$(".clickOpen > a").on("click", function () {
+		$(this).parent().addClass("on");
+	});
+	$(".clickOpen a.clickClose").on("click", function () {
+		$(this).parents(".clickOpen").removeClass("on");
+	});
+	function gnb_open() {
+		var param = $('#mobile-menu');
+		var str = location.href;
+		var n = 0;
+		var dur = 300; // 애니메이션 진행 속도
+		var meth = "easeOutExpo"; // 애니메이션 진행 타입
+		param.find(".item").hide();
+		param.find(".depth1_ul > .n1 .item").show();
+		param.find(".depth1_ul > .n1 > a").addClass("ov");
+		param.find(".depth1_ul > .n1 > a").attr("title", "하위메뉴 닫기, 확장됨");
+		param.find("a").on("click", function (event) {
+			if (param.is(":animated") && param.find(":animated").size()) {
+				return false;
+			}
+		});
+		function hideMenu() {
+			param
+				.find('.collapse')
+				.hide()
+				.removeClass('ov');
+		}
+		param.find(".depth1_ul>li>a").on("click", function (event) {
+			n = $(this).parent().index();
+			if ($(this)
+					.next()
+					.attr("class")
+					.match("item")) {
+				if ($(this)
+						.next()
+						.find(" .depth2_ul")
+						.size() != 0 && $(this)
+						.next()
+						.find(" .depth2_ul>li")
+						.size() != 0) {
+					if ($(this).next().css("display") == "none") {
+						param
+							.find(".depth1_ul>li>a")
+							.not(n)
+							.removeClass("ov")
+							.next()
+							.stop(true, true)
+							.delay(150)
+							.slideUp(150);
+						param
+							.find(".depth1_ul>li>a")
+							.not(n)
+							.attr("title", "하위메뉴 열기, 축소됨");
+						param
+							.find(".depth1_ul>li>a")
+							.eq(n)
+							.addClass("ov")
+							.next()
+							.stop(true, true)
+							.slideDown(150);
+						param
+							.find(".depth1_ul>li>a")
+							.eq(n)
+							.attr("title", "하위메뉴 닫기, 확장됨");
+					}
+					event.preventDefault();
+				}
+			}
+		});
+		$(window).on('resize', function () {
+			$('.mobile-close').click();
+		});
+	}
+</script>
+</body>
+	
+</html>

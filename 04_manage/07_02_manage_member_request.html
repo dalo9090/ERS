@@ -1,0 +1,1165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>평가위원회 선정요청 &gt; SG-ERS 평가관리시스템</title>
+<link type="text/css" rel="stylesheet" href="../../css/reset.css">
+<link type="text/css" rel="stylesheet" href="../../css/header.css">
+<link type="text/css" rel="stylesheet" href="../../css/common.css">
+<link type="text/css" rel="stylesheet" href="../../css/sub.css"> <!-- 서브에서만 사용 -->
+<link type="text/css" rel="stylesheet" href="../../css/contents.css">
+<link type="text/css" rel="stylesheet" href="../../css/footer.css">
+<script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script> <!-- 기본 스크립트 -->
+<script type="text/javascript" src="../../js/common.js"></script> <!-- 공통 스크립트 -->
+<script type="text/javascript" src="../../js/jquery-migrate-1.4.1.min.js"></script> <!-- 헤더영역1/3 -->
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script> <!-- 헤더영역2/3 -->
+<script type="text/javascript" src="../../js/acego.gnb.js"></script> <!-- 헤더영역3/3 -->
+<script type="text/javascript" src="../../js/drop.js"></script> <!-- 위치정보 열림 -->
+<script type="text/javascript" src="../../js/pop.js"></script> <!-- 팝업 스크립트-->
+
+</head>
+
+<body>
+	<!-- skipNavigation-->
+	<div class="skipToContent">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<div id="dimed" style="opacity: 1; display: none;"></div>
+	<!-- //skipNavigation -->
+		<div class="sub_wrap">
+	<header>
+	</header>
+	<script>
+	$("header").load("../navi_area_manage.html")
+	</script>
+
+	
+
+		<div class="container_wrap sub_bg">
+			<div class="sub_title_area">
+				<h2>평가위원회 선정요청</h2>
+			</div>
+		</div>
+		
+		<div class="location_wrap">
+		<div class="location_nav">
+			<ul>
+				<li><a href="#"><i class="xi-home"><span class="text_ind">홈으로</span></i></a></li>
+				<li><a href="#">평가위원회 상세목록</a></li>
+				<li><a href="#" class="on">평가위원회 선정요청</a></li>
+			</ul>
+		</div>
+		<!-- 모바일 전용 위치정보 start -->
+		<div id="mo_location_nav" class="cm-top-menu clearfix">
+				<div class="side-menu-inner clearfix">
+					<a href="#" class="location-to-home-btn" title="메인으로"><i class="xi-home"></i></a>
+						<div class="menu-location location2 cm-drop-menu-box-JS" data-drop-event="click">
+			<button class="cur-location cm-drop-open-btn-JS">
+				<span>평가위원회 선정요청</span>
+			</button>
+		</div>
+
+				</div>
+			</div>
+	<!-- 모바일 전용 위치정보 end -->
+		</div>
+		
+		<div class="container_box_sub">
+			<div class="contents_divide">
+				
+			<section>
+					<div class="content_title">
+						<h3 class="title_list">평가위원회 선정요청 작성</h3>
+<!--
+						<div class="cont_right_box approver_a">
+							<div class="approver">
+									<span>결재자</span>
+									<label for="textWord8">결재자</label>
+									<input class="w200px" type="text" id="textWord8" name="textWord" title="결재자" disabled>
+									<a href="../pop/02_search_affiliation_approver.html" onClick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_blue" role="button">검색</a>
+							</div>
+						</div>
+-->
+					</div>
+				
+				
+					<div class="sub_section">
+					<h4 class="sub_heading"><span>기본정보</span></h4>
+						
+						<div class="cont_right_box">
+							<p class="fl pt05 pr10"><strong class="required" title="필수항목">*</strong>필수입력 항목입니다.</p>
+						</div>
+						
+					<div class="basic_tb t_row">
+					<table>
+						<caption>
+							선정 조회 테이블입니다 정보를 수정하실 수 있습니다.
+						</caption>
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:30%;">
+							<col style="width:20%;">
+							<col style="width:30%;">
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="col"><strong class="required" title="필수항목">*</strong>평가명</th>
+							<td data-title="평가명">
+								<label for="textWord2">평가명</label>
+								<input class="w100" type="text" id="textWord2" name="textWord" title="평가명">
+							</td>
+							<th scope="col"><strong class="required" title="필수항목">*</strong>다회차 평가</th>
+							<td data-title="다회차 평가">
+									<label for="radio10-1" class="label_on">
+										<input type="radio" id="radio10-1" name="radio_box">
+										Y
+									</label>
+									<label for="radio10-2" class="label_on">
+										<input type="radio" id="radio10-2" name="radio_box">
+										N
+									</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="col"><strong class="required" title="필수항목">*</strong>평가일</th>
+							<td data-title="평가일" colspan="3">
+								<div class="time_a">
+									<label for="textWord4">평가일</label>
+									<input type="text" id="textWord4_1" name="textWord" title="평가일" disabled>
+									<a href="#"><img src="../../images/sub/icon_calendar.png" alt="달력"></a>
+								</div>
+								<div class="time_b">
+								<label for="textWord5">평가시간</label>
+								<select class="select w10" id="sel_Word5_1" title="평가시작 시간">
+									<option value="시" selected="selected">0시</option>
+									<option value="1">1시</option>
+									<option value="2">2시</option>
+									<option value="3">3시</option>
+									<option value="4">4시</option>
+									<option value="5">5시</option>
+									<option value="6">6시</option>
+									<option value="7">7시</option>
+									<option value="8">8시</option>
+									<option value="9">9시</option>
+									<option value="10">10시</option>
+									<option value="11">11시</option>
+									<option value="12">12시</option>
+									<option value="13">13시</option>
+									<option value="14">14시</option>
+									<option value="15">15시</option>
+									<option value="16">16시</option>
+									<option value="17">17시</option>
+									<option value="18">18시</option>
+									<option value="19">19시</option>
+									<option value="20">20시</option>
+									<option value="21">21시</option>
+									<option value="22">22시</option>
+									<option value="23">23시</option>
+								</select>
+								<select class="select w10" id="sel_Word6" title="평가시작 분">
+									<option value="분" selected="selected">0분</option>
+									<option value="5">5분</option>
+									<option value="10">10분</option>
+									<option value="15">15분</option>
+									<option value="20">20분</option>
+									<option value="25">25분</option>
+									<option value="30">30분</option>
+									<option value="35">35분</option>
+									<option value="40">40분</option>
+									<option value="45">45분</option>
+									<option value="50">50분</option>
+									<option value="55">55분</option>
+								</select>
+								<span class="pl05 pr05">~</span>
+								<select class="select w10" id="sel_Word5_1" title="평가시작 시간">
+									<option value="시" selected="selected">0시</option>
+									<option value="1">1시</option>
+									<option value="2">2시</option>
+									<option value="3">3시</option>
+									<option value="4">4시</option>
+									<option value="5">5시</option>
+									<option value="6">6시</option>
+									<option value="7">7시</option>
+									<option value="8">8시</option>
+									<option value="9">9시</option>
+									<option value="10">10시</option>
+									<option value="11">11시</option>
+									<option value="12">12시</option>
+									<option value="13">13시</option>
+									<option value="14">14시</option>
+									<option value="15">15시</option>
+									<option value="16">16시</option>
+									<option value="17">17시</option>
+									<option value="18">18시</option>
+									<option value="19">19시</option>
+									<option value="20">20시</option>
+									<option value="21">21시</option>
+									<option value="22">22시</option>
+									<option value="23">23시</option>
+								</select>
+								<select class="select w10" id="sel_Word6" title="평가시작 분">
+									<option value="분" selected="selected">0분</option>
+									<option value="5">5분</option>
+									<option value="10">10분</option>
+									<option value="15">15분</option>
+									<option value="20">20분</option>
+									<option value="25">25분</option>
+									<option value="30">30분</option>
+									<option value="35">35분</option>
+									<option value="40">40분</option>
+									<option value="45">45분</option>
+									<option value="50">50분</option>
+									<option value="55">55분</option>
+								</select>
+								<span>까지</span>
+								</div>
+							</td>
+						</tr>				
+							<tr>
+							<th scope="col">긴급평가요청</th>
+							<td data-title="긴급평가요청" colspan="3" class="emer">
+								<div class="emer_1">	
+								<label for="radio5" class="label_on plus_box_on0">
+										<input type="checkbox" id="radio5" name="radio_box1" >
+										<span class="plus_box_on0">요청하기</span>
+									</label>
+								</div>
+								
+								<div class="eval_comm_box1 plus_box plu0">
+									<p class="small_title">첨부파일 등록</p>
+										<div class="ex_btn_file">
+											<div class="ex_btn_file_in new_file_box">
+												<input type="file">
+												<a href="#"><i class="xi-close-min"><span class="text_ind">삭제</span></i></a>
+											</div>
+											</div>
+								</div>
+						<div class="note_helpbox2 clear">
+							<p>평가일로부터 5일(토요일, 공휴일 제외) 이전까지 요청하되, 긴급 평가가 필요한 경우는 <b class="f_red">'긴급평가 요청서'</b> 첨부</p>
+						</div>
+
+							</td>
+								</tr>
+							<tr>
+							<th scope="col"><strong class="required" title="필수항목">*</strong>장소</th>
+							<td data-title="장소" colspan="3" class="search_places">
+								<div>
+									<label for="textWord8">장소</label>
+									<input class="w300px" type="text" id="textWord8" name="textWord" title="장소" disabled>
+									<a href="../pop/02_search_place.html" onClick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black" role="button">검색</a>
+								</div>
+								<div>
+									<label for="textWord9"><strong class="required" title="필수항목">*</strong>장소주소</label>
+									<input class="w400px mt05 a2" type="text" id="textWord9" name="textWord" title="장소주소">
+									<label for="textWord10">상세주소</label>
+									<input class="w400px mt05 a2 " type="text" id="textWord10" name="textWord" title="상세주소">
+								</div>
+							</td>
+							
+							</tr>
+						<tr>
+							<th scope="col"><strong class="required" title="필수항목">*</strong>주차정보</th>
+							<td data-title="주차정보">
+								<div>
+								<p class="small_title fl w40">주차가능 여부</p>
+									<p class="fl mt05">
+									<label for="radio1" class="label_on">
+										<input type="radio" id="radio1" name="radio_box">
+										가능
+									</label>
+									<label for="radio2" class="label_on">
+										<input type="radio" id="radio2" name="radio_box">
+										불가능
+									</label>
+										</p>
+								</div>
+								<div class="clear">
+										<p class="small_title fl w40">주차비용 지원 여부</p>
+									<p class="fl mt05">
+									<label for="radio6-2" class="label_on ">
+									<label for="radio12" class="label_on">
+										<input type="radio" id="radio12" name="radio_box1">
+										지원
+									</label>
+									<label for="radio23" class="label_on">
+										<input type="radio" id="radio23" name="radio_box1">
+										미지원
+									</label>
+										</label>
+									</p>
+									</div>
+
+
+							</td>
+						
+								<th scope="col"><strong class="required" title="필수항목">*</strong>평가자문비</th>
+								<td data-title="평가자문비" colspan="3">
+									<label for="textWord11">평가자문비</label>
+									<input class="w100px" type="text" id="textWord11" name="textWord" title="평가자문비"> 원
+									<div class="mt10">
+										<label for="radio6" class="label_on">
+											<input type="checkbox" id="radio6" name="radio_box3" >
+											<span class="bold">교통비/식비 포함</span>
+										</label>
+									</div>
+
+								</td>
+							</tr>
+						</tbody>
+					</table>        
+				</div>	
+					
+				</div>
+				
+				<div class="sub_section">
+					<h4 class="sub_heading"><span>평가위원구성</span></h4>
+					<div class="basic_tb t_row">
+					<table>
+						<caption>
+							선정 조회 테이블입니다 정보를 수정하실 수 있습니다.
+						</caption>
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:30%;">
+							<col style="width:20%;">
+							<col style="width:30%;">
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="col"><strong class="required" title="필수항목">*</strong>정족수</th>
+							<td data-title="정족수" colspan="3">			
+								<label for="textWord2-1">정족수</label>
+								<select class="select w200px" id="textWord2-1" title="정족수">
+									<option value="0">0명</option>
+									<option value="1">1명</option>
+									<option value="2">2명</option>
+									<option value="3">3명</option>
+									<option value="4">4명</option>
+									<option value="5">5명</option>
+									<option value="6" selected="selected">6명</option>
+									<option value="7">7명</option>
+									<option value="8">8명</option>
+									<option value="9">9명</option>
+								</select>
+						<div class="note_helpbox2 clear">
+							<p>평가위원회 개최를 위한 정족수는 각 평가업무별 <b class="f_red">평가위원 구성기준의 3분의 2 이상</b>으로 하되 필요한 경우 평가시행부서의 장이 달리 정할 수 있다.</p>
+						</div>
+
+								</td>
+							</tr>
+						<tr>
+							<th scope="col"><strong class="required" title="필수항목">*</strong>전체 요구인원</th>
+							<td data-title="전체 요구인원">			
+								<label for="textWord2-1">전체 요구청인원</label>
+								<select class="select w200px" id="textWord2-1" title="전체 요구인원">
+									<option value="0">0명</option>
+									<option value="1">1명</option>
+									<option value="2">2명</option>
+									<option value="3">3명</option>
+									<option value="4">4명</option>
+									<option value="5">5명</option>
+									<option value="6">6명</option>
+									<option value="7">7명</option>
+									<option value="8" selected="selected">8명</option>
+									<option value="9">9명</option>
+								</select>
+								</td>
+							</tr>
+						<tr>
+							<th scope="col"><strong class="required" title="필수항목">*</strong>교섭조건</th>
+							<td colspan="3" data-title="교섭조건">
+								<div>
+									<div class="negotiation_btn_box">
+										<p class="fl"><a href="#" class="btn_basic"><i class="xi-plus"></i>교섭조건 추가</a></p>
+										<p class="fr"><a href="../pop/11_06_admin_afterCommittee_view_pop_after_box.html" onClick="window.open(this.href, '', 'width=700, height=730'); return false;" class="bg_green btn_basic" role="button">과거 평가조건 불러오기</a></p>
+									</div>
+								<table class="in_table in_table_a">
+										<caption>기본테이블에 관련된 정보를 확인 하실수 있습니다.</caption>
+										<colgroup>
+											<col style="width:20%;">
+											<col style="width:20%;">
+											<col style="width:20%;">
+											<col style="width:10%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">분야</th>
+												<th scope="col">직군</th>
+												<th scope="col">요구인원</th>
+												<th scope="col">삭제</th>
+											</tr>
+										</thead>
+								
+										<tbody>
+												<tr>
+													<td data-title="분야">			
+														<label for="textWord2">분야</label>
+														<select class="select w200px" id="sel_Word6_1" title="분야">
+															<option value="0" selected="selected">공무원</option>
+															<option value="1">산업계</option>
+															<option value="2">학계</option>
+															<option value="3">연구계</option>
+															<option value="4">지정</option>
+														</select>
+														</td>
+													<td data-title="직군">			
+														<label for="textWord11-1">직군</label>
+														<input class="w200px" type="text" id="textWord11-1" name="textWord" title="직군" disabled="">
+														<a href="../pop/01_05_job_box_pop.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black job_box_on" role="button">검색</a>
+													</td>
+													<td data-title="요구인원">			
+														<label for="textWord2-3">요구인원</label>
+														<select class="select w100px" id="textWord2-3" title="요구인원">
+															<option value="0">0명</option>
+															<option value="1">1명</option>
+															<option value="2" selected="selected">2명</option>
+															<option value="3">3명</option>
+															<option value="4">4명</option>
+															<option value="5">5명</option>
+															<option value="6">6명</option>
+															<option value="7">7명</option>
+															<option value="8">8명</option>
+															<option value="9">9명</option>
+														</select>
+														</td>
+																					<td data-title="삭제">			
+								<a href="javascript:choiceOpt_1()" class="btn_small bg_red">삭제</a>
+								</td>
+
+												</tr>
+												<tr>
+													<td data-title="분야">			
+														<label for="textWord2">분야</label>
+														<select class="select w200px" id="sel_Word6_1" title="분야">
+															<option value="0">공무원</option>
+															<option value="1">산업계</option>
+															<option value="2">학계</option>
+															<option value="3">연구계</option>
+															<option value="4" selected="selected">지정</option>
+														</select>
+														</td>
+													<td data-title="직군">			
+														-
+													</td>
+													<td data-title="요구인원">			
+														<label for="textWord2-3">요구인원</label>
+														<select class="select w100px" id="textWord2-3" title="요구인원">
+															<option value="0">0명</option>
+															<option value="1">1명</option>
+															<option value="2" selected="selected">2명</option>
+															<option value="3">3명</option>
+															<option value="4">4명</option>
+															<option value="5">5명</option>
+															<option value="6">6명</option>
+															<option value="7">7명</option>
+															<option value="8">8명</option>
+															<option value="9">9명</option>
+														</select>
+														</td>
+																					<td data-title="삭제">			
+								<a href="javascript:choiceOpt_1()" class="btn_small bg_red">삭제</a>
+								</td>
+
+												</tr>
+												<tr>
+													<td data-title="분야">			
+														<label for="textWord2">분야</label>
+														<select class="select w200px" id="sel_Word6_1" title="분야">
+															<option value="0" >공무원</option>
+															<option value="1">산업계</option>
+															<option value="2"selected="selected">학계</option>
+															<option value="3">연구계</option>
+															<option value="4">지정</option>
+														</select>
+														</td>
+													<td data-title="직군">			
+														<label for="textWord11-1">직군</label>
+														<input class="w200px" type="text" id="textWord11-1" name="textWord" title="직군" disabled="">
+														<a href="../pop/01_05_job_box_pop.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black job_box_on" role="button">검색</a>
+													</td>
+													<td data-title="요구인원">			
+														<label for="textWord2-3">요구인원</label>
+														<select class="select w100px" id="textWord2-3" title="요구인원">
+															<option value="0">0명</option>
+															<option value="1">1명</option>
+															<option value="2" selected="selected">2명</option>
+															<option value="3">3명</option>
+															<option value="4">4명</option>
+															<option value="5">5명</option>
+															<option value="6">6명</option>
+															<option value="7">7명</option>
+															<option value="8">8명</option>
+															<option value="9">9명</option>
+														</select>
+														</td>
+								<td data-title="삭제">			
+								<a href="javascript:choiceOpt_1()" class="btn_small bg_red">삭제</a>
+								</td>
+												</tr>
+												<tr>
+													<td data-title="분야">			
+														<label for="textWord2">분야</label>
+														<select class="select w200px" id="sel_Word6_1" title="분야">
+															<option value="0">공무원</option>
+															<option value="1">산업계</option>
+															<option value="2">학계</option>
+															<option value="3" selected="selected">연구계</option>
+															<option value="4">지정</option>
+														</select>
+														</td>
+													<td data-title="직군">			
+														<label for="textWord11-1">직군</label>
+														<input class="w200px" type="text" id="textWord11-1" name="textWord" title="직군" disabled="">
+														<a href="../pop/01_05_job_box_pop.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black job_box_on" role="button">검색</a>
+													</td>
+													<td data-title="요구인원">			
+														<label for="textWord2-3">요구인원</label>
+														<select class="select w100px" id="textWord2-3" title="요구인원">
+															<option value="0">0명</option>
+															<option value="1">1명</option>
+															<option value="2" selected="selected">2명</option>
+															<option value="3">3명</option>
+															<option value="4">4명</option>
+															<option value="5">5명</option>
+															<option value="6">6명</option>
+															<option value="7">7명</option>
+															<option value="8">8명</option>
+															<option value="9">9명</option>
+														</select>
+														</td>
+																					<td data-title="삭제">			
+								<a href="javascript:choiceOpt_1()" class="btn_small bg_red">삭제</a>
+								</td>
+
+												</tr>
+												<tr>
+													<td data-title="분야">			
+														<label for="textWord2">분야</label>
+														<select class="select w200px" id="sel_Word6_1" title="분야">
+															<option value="0" selected="selected">공무원</option>
+															<option value="1">산업계</option>
+															<option value="2">학계</option>
+															<option value="3">연구계</option>
+															<option value="4">지정</option>
+														</select>
+														</td>
+													<td data-title="직군">			
+														<label for="textWord11-1">직군</label>
+														<input class="w200px" type="text" id="textWord11-1" name="textWord" title="직군" disabled="">
+														<a href="../pop/01_05_job_box_pop.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black job_box_on" role="button">검색</a>
+													</td>
+													<td data-title="요구인원">			
+														<label for="textWord2-3">요구인원</label>
+														<select class="select w100px" id="textWord2-3" title="요구인원">
+															<option value="시" selected="selected">0명</option>
+															<option value="1">1명</option>
+															<option value="2">2명</option>
+															<option value="3">3명</option>
+															<option value="4">4명</option>
+															<option value="5">5명</option>
+															<option value="6">6명</option>
+															<option value="7">7명</option>
+															<option value="8">8명</option>
+															<option value="9">9명</option>
+														</select>
+														</td>
+																					<td data-title="삭제">			
+								<a href="javascript:choiceOpt_1()" class="btn_small bg_red">삭제</a>
+								</td>
+
+												</tr>
+												<tr>
+													<td data-title="분야">			
+														<label for="textWord2">분야</label>
+														<select class="select w200px" id="sel_Word6_1" title="분야">
+															<option value="0" selected="selected">공무원</option>
+															<option value="1">산업계</option>
+															<option value="2">학계</option>
+															<option value="3">연구계</option>
+															<option value="4">지정</option>
+														</select>
+														</td>
+													<td data-title="직군">			
+														<label for="textWord11-1">직군</label>
+														<input class="w200px" type="text" id="textWord11-1" name="textWord" title="직군" disabled="">
+														<a href="../pop/01_05_job_box_pop.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black job_box_on" role="button">검색</a>
+													</td>
+													<td data-title="요구인원">			
+														<label for="textWord2-3">요구인원</label>
+														<select class="select w100px" id="textWord2-3" title="요구인원">
+															<option value="시" selected="selected">0명</option>
+															<option value="1">1명</option>
+															<option value="2">2명</option>
+															<option value="3">3명</option>
+															<option value="4">4명</option>
+															<option value="5">5명</option>
+															<option value="6">6명</option>
+															<option value="7">7명</option>
+															<option value="8">8명</option>
+															<option value="9">9명</option>
+														</select>
+														</td>
+																					<td data-title="삭제">			
+								<a href="javascript:choiceOpt_1()" class="btn_small bg_red">삭제</a>
+								</td>
+
+												</tr>
+												<tr>
+													<td data-title="분야">			
+														<label for="textWord2">분야</label>
+														<select class="select w200px" id="sel_Word6_1" title="분야">
+															<option value="0" selected="selected">공무원</option>
+															<option value="1">산업계</option>
+															<option value="2">학계</option>
+															<option value="3">연구계</option>
+															<option value="4">지정</option>
+														</select>
+														</td>
+													<td data-title="직군">			
+														<label for="textWord11-1">직군</label>
+														<input class="w200px" type="text" id="textWord11-1" name="textWord" title="직군" disabled="">
+														<a href="../pop/01_05_job_box_pop.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black job_box_on" role="button">검색</a>
+													</td>
+													<td data-title="요구인원">			
+														<label for="textWord2-3">요구인원</label>
+														<select class="select w100px" id="textWord2-3" title="요구인원">
+															<option value="시" selected="selected">0명</option>
+															<option value="1">1명</option>
+															<option value="2">2명</option>
+															<option value="3">3명</option>
+															<option value="4">4명</option>
+															<option value="5">5명</option>
+															<option value="6">6명</option>
+															<option value="7">7명</option>
+															<option value="8">8명</option>
+															<option value="9">9명</option>
+														</select>
+														</td>
+																					<td data-title="삭제">			
+								<a href="javascript:choiceOpt_1()" class="btn_small bg_red">삭제</a>
+								</td>
+
+												</tr>
+												<tr>
+													<td data-title="분야">			
+														<label for="textWord2">분야</label>
+														<select class="select w200px" id="sel_Word6_1" title="분야">
+															<option value="0" selected="selected">공무원</option>
+															<option value="1">산업계</option>
+															<option value="2">학계</option>
+															<option value="3">연구계</option>
+															<option value="4">지정</option>
+														</select>
+														</td>
+													<td data-title="직군">			
+														<label for="textWord11-1">직군</label>
+														<input class="w200px" type="text" id="textWord11-1" name="textWord" title="직군" disabled="">
+														<a href="../pop/01_05_job_box_pop.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black job_box_on" role="button">검색</a>
+													</td>
+													<td data-title="요구인원">			
+														<label for="textWord2-3">요구인원</label>
+														<select class="select w100px" id="textWord2-3" title="요구인원">
+															<option value="시" selected="selected">0명</option>
+															<option value="1">1명</option>
+															<option value="2">2명</option>
+															<option value="3">3명</option>
+															<option value="4">4명</option>
+															<option value="5">5명</option>
+															<option value="6">6명</option>
+															<option value="7">7명</option>
+															<option value="8">8명</option>
+															<option value="9">9명</option>
+														</select>
+														</td>
+																					<td data-title="삭제">			
+								<a href="javascript:choiceOpt_1()" class="btn_small bg_red">삭제</a>
+								</td>
+
+												</tr>
+												<tr>
+													<td data-title="분야">			
+														<label for="textWord2">분야</label>
+														<select class="select w200px" id="sel_Word6_1" title="분야">
+															<option value="0" selected="selected">공무원</option>
+															<option value="1">산업계</option>
+															<option value="2">학계</option>
+															<option value="3">연구계</option>
+															<option value="4">지정</option>
+														</select>
+														</td>
+													<td data-title="직군">			
+														<label for="textWord11-1">직군</label>
+														<input class="w200px" type="text" id="textWord11-1" name="textWord" title="직군" disabled="">
+														<a href="../pop/01_05_job_box_pop.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black job_box_on" role="button">검색</a>
+													</td>
+													<td data-title="요구인원">			
+														<label for="textWord2-3">요구인원</label>
+														<select class="select w100px" id="textWord2-3" title="요구인원">
+															<option value="시" selected="selected">0명</option>
+															<option value="1">1명</option>
+															<option value="2">2명</option>
+															<option value="3">3명</option>
+															<option value="4">4명</option>
+															<option value="5">5명</option>
+															<option value="6">6명</option>
+															<option value="7">7명</option>
+															<option value="8">8명</option>
+															<option value="9">9명</option>
+														</select>
+														</td>
+																					<td data-title="삭제">			
+								<a href="javascript:choiceOpt_1()" class="btn_small bg_red">삭제</a>
+								</td>
+
+												</tr>
+												<tr>
+													<td data-title="분야">			
+														<label for="textWord2">분야</label>
+														<select class="select w200px" id="sel_Word6_1" title="분야">
+															<option value="0" selected="selected">공무원</option>
+															<option value="1">산업계</option>
+															<option value="2">학계</option>
+															<option value="3">연구계</option>
+															<option value="4">지정</option>
+														</select>
+														</td>
+													<td data-title="직군">			
+														<label for="textWord11-1">직군</label>
+														<input class="w200px" type="text" id="textWord11-1" name="textWord" title="직군" disabled="">
+														<a href="../pop/01_05_job_box_pop.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black job_box_on" role="button">검색</a>
+													</td>
+													<td data-title="요구인원">			
+														<label for="textWord2-3">요구인원</label>
+														<select class="select w100px" id="textWord2-3" title="요구인원">
+															<option value="시" selected="selected">0명</option>
+															<option value="1">1명</option>
+															<option value="2">2명</option>
+															<option value="3">3명</option>
+															<option value="4">4명</option>
+															<option value="5">5명</option>
+															<option value="6">6명</option>
+															<option value="7">7명</option>
+															<option value="8">8명</option>
+															<option value="9">9명</option>
+														</select>
+														</td>
+																					<td data-title="삭제">			
+								<a href="javascript:choiceOpt_1()" class="btn_small bg_red">삭제</a>
+								</td>
+
+												</tr>
+										</tbody>
+									</table>
+								</div>
+									<div>
+										<p class="total_people"><span>입력된 전체 요청인원 수 <b>8명</b></span></p>
+									
+								</div>
+							</td>
+						</tr>
+							<tr>
+							
+							<th scope="col"><strong class="required" title="필수항목">*</strong>예비교섭조건</th>
+							<td colspan="3" data-title="예비교섭조건">
+							<div class="note_helpbox2 clear mb10">
+								<p>평가위원 후보 부족에 따른 정족 미달시 예비 교섭 조건 설정</p>
+							</div>
+
+								<div>
+									<p><a href="#" class="btn_basic"><i class="xi-plus"></i>예비교섭조건 추가</a></p>
+								<table class="in_table in_table_a">
+										<caption>기본테이블에 관련된 정보를 확인 하실수 있습니다.</caption>
+										<colgroup>
+											<col style="width:20%;">
+											<col style="width:20%;">
+											<col style="width:10%;">
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">분야</th>
+												<th scope="col">직군</th>
+												<th scope="col">삭제</th>
+											</tr>
+										</thead>
+								
+										<tbody>
+												<tr>
+													<td data-title="분야">			
+														<label for="textWord2">분야</label>
+														<select class="select w200px" id="sel_Word6_1" title="분야">
+															<option value="0">공무원</option>
+															<option value="1">산업계</option>
+															<option value="2">학계</option>
+															<option value="3" selected="selected">연구계</option>
+														</select>
+														</td>
+													<td data-title="직군">			
+														<label for="textWord11-1">직군</label>
+														<input class="w200px" type="text" id="textWord11-1" name="textWord" title="직군" disabled="">
+														<a href="../pop/01_05_job_box_pop.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black job_box_on" role="button">검색</a>
+													</td>
+										
+																					<td data-title="삭제">			
+								<a href="javascript:choiceOpt_1()" class="btn_small bg_red">삭제</a>
+								</td>
+
+												</tr>
+												<tr>
+													<td data-title="분야">			
+														<label for="textWord2">분야</label>
+														<select class="select w200px" id="sel_Word6_1" title="분야">
+															<option value="0" selected="selected">공무원</option>
+															<option value="1">산업계</option>
+															<option value="2">학계</option>
+															<option value="3">연구계</option>
+														</select>
+														</td>
+													<td data-title="직군">			
+														<label for="textWord11-1">직군</label>
+														<input class="w200px" type="text" id="textWord11-1" name="textWord" title="직군" disabled="">
+														<a href="../pop/01_05_job_box_pop.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black job_box_on" role="button">검색</a>
+													</td>
+											
+																					<td data-title="삭제">			
+								<a href="javascript:choiceOpt_1()" class="btn_small bg_red">삭제</a>
+								</td>
+
+												</tr>
+										</tbody>
+									</table>
+								</div>
+									<div>
+									
+									
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table> 
+				</div>	
+					
+				</div>
+				
+				<div class="sub_section">
+					<h4 class="sub_heading"><span>특별 요청사항</span></h4>
+					<div class="basic_tb t_row">
+					<table>
+						<caption>
+							선정 조회 테이블입니다 정보를 수정하실 수 있습니다.
+						</caption>
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:30%;">
+							<col style="width:20%;">
+							<col style="width:30%;">
+						</colgroup>
+						<tbody>
+						
+						<tr>
+							<th scope="col"><strong class="required" title="필수항목">*</strong>교섭제외 대상 설정</th>
+							<td data-title="교섭제외 대상 설정" colspan="3">
+								<div class="leave_box1">
+									<a href="../pop/01_02_search_affiliation.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_black leave_box_on" role="button">교섭제외 대상 검색</a>
+								</div>
+								<div class="leave_box2">
+									<a href="#" class="leave_box_plus"><i class="xi-plus-square-o"><span class="text_ind">추가</span></i></a>
+									<div class="separate_table w40">
+										<div class="ex_box">
+											<ul>
+												<li>
+													<p><span>기관명 :</span>한국나라게이트</p>
+													<div class="ex_btn_box">
+														<a href="#" class="btn_small line_red">삭제</a>
+													</div>
+												</li>
+												<li>
+													<p><span>기관명 :</span>한국나라게이트</p>
+													<div class="ex_btn_box">
+														<a href="#" class="btn_small line_red">삭제</a>
+													</div>
+												</li>
+												<li>
+													<p><span>기관명 :</span>한국나라게이트<b>(직접입력)</b></p>
+													<div class="ex_btn_box">
+														<a href="#" class="btn_small line_red">삭제</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							<div class="note_helpbox2 clear mb10">
+								<p>1.평가 대상 사업과 관련하여 하도급을 포함하여 용역, 자문, 연구 등을 수행한 경우
+                					<span>2.평가 대상 사업의 시행으로 인하여 이해당사자가 되는 경우(대리관계 포함)</span>
+               						<span>3.최근 3년 이내 평가대상 업체에 재직한 경력이 있는 경우</span>
+               						<span>4.그 밖에 공정한 평가를 수행할 수 없다고 판단될 경우</span>
+								</p>
+							</div>
+							</td>
+							</tr>
+							<tr>
+								<th scope="col">평가위원 지정</th>
+								
+							<td data-title="평가위원 지정"class="emer">
+								<div class="emer_1">	
+								<label for="radio6_1" class="label_on aa2">
+										<input type="checkbox" id="radio6_1" name="radio_box6" >
+										<span class="plus_box_on1 aa2">지정하기</span>
+									</label>
+								</div>
+								
+								<div class="eval_comm_box1 plus_box aa3">
+									<p class="small_title">첨부파일 등록</p>
+										<div class="ex_btn_file">
+											<div class="ex_btn_file_in new_file_box">
+												<input type="file">
+												<a href="#"><i class="xi-close-min"><span class="text_ind">삭제</span></i></a>
+											</div>
+											</div>
+								</div>
+							</td>
+							<th scope="col">평가위원 사전공개‧검토 요청</th>
+							<td data-title="평가위원 사전공개‧검토 요청"class="emer">
+								<div class="emer_1">	
+								<label for="radio6_2" class="label_on bb2">
+										<input type="checkbox" id="radio6_2" name="radio_box6_2" >
+										<span class="plus_box_on1 bb2">요청하기</span>
+									</label>
+								</div>
+								
+								<div class="eval_comm_box1 plus_box bb3">
+									<p class="small_title">첨부파일 등록</p>
+										<div class="ex_btn_file">
+											<div class="ex_btn_file_in new_file_box">
+												<input type="file">
+												<a href="#"><i class="xi-close-min"><span class="text_ind">삭제</span></i></a>
+											</div>
+											</div>
+								</div>
+							</td>
+								
+							</tr>
+							<tr>
+								<th scope="col">기타 입력사항</th>
+								<td data-title="기타 입력사항" colspan="3">
+									<textarea class="h20px" type="text" id="textWord5" name="textWord" title="내용"></textarea>
+								<div class="note_helpbox2 clear mb10">
+								<p>오전오후 평가장소가 다르거나, 다회차 평가, 일자별 동일 평가위원 요구 등 작성 필수</p>
+							</div>
+
+							</td>
+							</tr>
+						</tbody>
+					</table> 
+				</div>	
+					
+				</div>
+					<div class="sub_section mb30">
+						<div class="approver_new">
+							<h3>결재자</h3>
+							<div class="mt10">
+							<label for="textWord9-1">결재자</label>
+							<input class="w200px" type="text" id="textWord9-1" name="textWord" title="결재자" disabled>
+							<a href="../pop/02_search_affiliation_approver.html" onClick="window.open(this.href, '', 'width=700, height=730'); return false;" class="btn_basic bg_blue" role="button">검색</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<div class="btn_box_wrap">
+						<a href="javascript:choiceOpt2()" class="btn_big bg_orange" role="button">임시저장</a>
+						<a href="../pop/03_03_evalu_official_document_new.html" onclick="window.open(this.href, '', 'width=700, height=730'); return false;" target="_blank" title="새창열림" class="btn_big bg_blue">요구서 확인</a>
+						<a href="javascript:choiceOpt()" class="btn_big bg_blue" role="button">결재상신</a>
+						<a href="03_manage_committee_list.html" class="btn_big bg_gray" role="button">목록으로</a>
+					</div>
+				</section>
+				
+				
+			<script type="text/javascript">
+	function choiceOpt(){
+		var result = confirm('결재상신 하시겠습니까?');
+		if(result == true) {
+			location.href = "03_manage_committee_list.html";
+		}
+		else{
+			location.href="javascript:return false";
+		}
+	}
+	function choiceOpt2(){
+		var result = confirm('임시저장 하시겠습니까?');
+		if(result == true) {
+			location.href = "03_manage_committee_list.html";
+		}
+		else{
+			location.href="javascript:return false";
+		}
+	}
+	
+				
+	function choiceOpt_1(){
+		var result = confirm('삭제하시겠습니까?');
+		if(result == true) {
+			location.href = "javascript:return false";
+		}
+		else{
+			location.href="javascript:return false";
+		}
+	}
+				
+	
+	
+
+
+				
+</script>	
+
+				
+				
+			</div>
+		</div>
+		
+<footer id="nFooter">
+	</footer>
+	<script>
+		$('#nFooter').load('../footer_area.html')	 
+	</script>
+	</div>
+
+	<!-- 스크립트 영역 공통 (모바일 메뉴 영역) -->
+	<script>
+	(function () {
+		var param = "#gnb_layout",
+			obj = ".item",
+			btn = ".th1_lnk",
+			wrap = "#top_layout",
+			dur = 300,
+			meth = "easeOutCubic";
+		gnb(param, obj, btn, wrap, dur, meth);
+		gnb_open();
+	}());
+	$(function () {
+		$("[data-print=print]").on('click', function () {
+			$("#txt").print({
+				globalStyles: true,
+				mediaPrint: false,
+				iframe: true,
+				noPrintSelector: ".avoid-this",
+				deferred: $.Deferred().done(function () {
+					console.log('Printing done', arguments);
+				})
+			});
+		});
+	});
+	$(".clickOpen > a").on("click", function () {
+		$(this).parent().addClass("on");
+	});
+	$(".clickOpen a.clickClose").on("click", function () {
+		$(this).parents(".clickOpen").removeClass("on");
+	});
+	function gnb_open() {
+		var param = $('#mobile-menu');
+		var str = location.href;
+		var n = 0;
+		var dur = 300; // 애니메이션 진행 속도
+		var meth = "easeOutExpo"; // 애니메이션 진행 타입
+		param.find(".item").hide();
+		param.find(".depth1_ul > .n1 .item").show();
+		param.find(".depth1_ul > .n1 > a").addClass("ov");
+		param.find(".depth1_ul > .n1 > a").attr("title", "하위메뉴 닫기, 확장됨");
+		param.find("a").on("click", function (event) {
+			if (param.is(":animated") && param.find(":animated").size()) {
+				return false;
+			}
+		});
+		function hideMenu() {
+			param
+				.find('.collapse')
+				.hide()
+				.removeClass('ov');
+		}
+		param.find(".depth1_ul>li>a").on("click", function (event) {
+			n = $(this).parent().index();
+			if ($(this)
+					.next()
+					.attr("class")
+					.match("item")) {
+				if ($(this)
+						.next()
+						.find(" .depth2_ul")
+						.size() != 0 && $(this)
+						.next()
+						.find(" .depth2_ul>li")
+						.size() != 0) {
+					if ($(this).next().css("display") == "none") {
+						param
+							.find(".depth1_ul>li>a")
+							.not(n)
+							.removeClass("ov")
+							.next()
+							.stop(true, true)
+							.delay(150)
+							.slideUp(150);
+						param
+							.find(".depth1_ul>li>a")
+							.not(n)
+							.attr("title", "하위메뉴 열기, 축소됨");
+						param
+							.find(".depth1_ul>li>a")
+							.eq(n)
+							.addClass("ov")
+							.next()
+							.stop(true, true)
+							.slideDown(150);
+						param
+							.find(".depth1_ul>li>a")
+							.eq(n)
+							.attr("title", "하위메뉴 닫기, 확장됨");
+					}
+					event.preventDefault();
+				}
+			}
+		});
+		$(window).on('resize', function () {
+			$('.mobile-close').click();
+		});
+	}
+</script>
+<script>
+	$(document).ready( function(){
+		$('.plus_box_on0').click( function(){
+			$('.plu0').toggleClass('disblock');
+		});
+	});
+	$(document).ready( function(){
+		$('.leave_box_on').click( function(){
+			$('.leave_box2').toggleClass('disblock');
+		});
+	});
+		$(document).ready( function(){
+		$('.eval_comm_box_on').click( function(){
+			$('.eval_comm_box2').toggleClass('disblock');
+		});
+	});
+		$(document).ready( function(){
+		$('.job_box_on').click( function(){
+			$('.job_box_c').toggleClass('disblock');
+		});
+	});
+		$(document).ready( function(){
+		$('.aa2').click( function(){
+			$('.aa3').toggleClass('disblock');
+		});
+	});
+		$(document).ready( function(){
+		$('.bb2').click( function(){
+			$('.bb3').toggleClass('disblock');
+		});
+	});
+
+</script>
+
+</body>
+	
+</html>

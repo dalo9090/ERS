@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개인 상세정보 조회 &gt; SG-ERS 평가관리시스템</title>
+<link type="text/css" rel="stylesheet" href="../../css/reset.css">
+<link type="text/css" rel="stylesheet" href="../../css/header.css">
+<link type="text/css" rel="stylesheet" href="../../css/common.css">
+<link type="text/css" rel="stylesheet" href="../../css/sub.css"> <!-- 서브에서만 사용 -->
+<link type="text/css" rel="stylesheet" href="../../css/contents.css">
+<link type="text/css" rel="stylesheet" href="../../css/footer.css">
+<script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script> <!-- 기본 스크립트 -->
+<script type="text/javascript" src="../../js/common.js"></script> <!-- 공통 스크립트 -->
+<script type="text/javascript" src="../../js/jquery-migrate-1.4.1.min.js"></script> <!-- 헤더영역1/3 -->
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script> <!-- 헤더영역2/3 -->
+<script type="text/javascript" src="../../js/acego.gnb.js"></script> <!-- 헤더영역3/3 -->
+<script type="text/javascript" src="../../js/drop.js"></script> <!-- 위치정보 열림 -->
+<script type="text/javascript" src="../../js/pop.js"></script> <!-- 팝업 스크립트-->
+</head>
+
+<body>
+	<!-- skipNavigation-->
+	<div class="skipToContent">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<div id="dimed" style="opacity: 1; display: none;"></div>
+	<!-- //skipNavigation -->
+		<div class="sub_wrap">
+	<header>
+	</header>
+	<script>
+	$("header").load("../navi_area_manage.html")
+	</script>
+
+	
+	
+
+		<div class="container_wrap sub_bg">
+			<div class="location_wrap">
+		<div class="location_nav">
+			<ul>
+				<li><a href="#"><i class="xi-home"><span class="text_ind">홈으로</span></i></a></li>
+				<li><a href="#" class="on">개인정보조회</a></li>
+			</ul>
+		</div>
+		<!-- 모바일 전용 위치정보 start -->
+		<div id="mo_location_nav" class="cm-top-menu clearfix">
+				<div class="side-menu-inner clearfix">
+					<a href="#" class="location-to-home-btn" title="메인으로"><i class="xi-home"></i></a>
+						<div class="menu-location location2 cm-drop-menu-box-JS" data-drop-event="click">
+			<button class="cur-location cm-drop-open-btn-JS">
+				<span>개인정보조회</span>
+			</button>
+		</div>
+
+				</div>
+			</div>
+	<!-- 모바일 전용 위치정보 end -->
+		</div>
+			<div class="sub_title_area">
+				<h2>개인정보조회</h2>
+			</div>
+		</div>
+		
+		
+		
+		<div class="container_box_sub">
+			<div class="contents_divide">
+
+		
+				<section>
+					<div class="content_title">
+						<h3 class="title_list">개인정보 조회 및 수정</h3>
+					</div>
+				</section>
+				
+				<section>
+					<div class="new_step_wrap">
+						<div class="new_step_box">
+							<ul>
+								
+								<li class="new_setp_img2_on">
+									<p>STEP01</p>
+									<p>개인정보 조회 및 수정</p>
+								</li>
+								<li class="new_setp_img3">
+									<p>STEP02</p>
+									<p>개인정보 수정 완료</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<div class="sub_section">
+					<h4 class="sub_heading"><span>기본정보</span></h4>
+						<div class="cont_right_box">
+							<p><strong class="required" title="필수항목">*</strong>필수입력 항목입니다.</p>
+						</div>
+						<div class="basic_tb t_row">
+						<table>
+							<caption>
+							   기본정보 등록에 관련된 정보를 입력하는 테이블입니다.
+							</caption>
+							<colgroup>
+								<col style="width:15%;">
+								<col style="width:35%;">
+								<col style="width:15%;">
+								<col style="width:35%;">
+							</colgroup>
+							<tbody>
+							<tr>
+								<th scope="col">성명</th>
+								<td data-title="성명">
+									유가영
+								</td>
+								<th scope="col">생년월일</th>
+								<td data-title="생년월일">
+									1991-11-27
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">아이디</th>
+								<td data-title="아이디">
+									admin
+								</td>
+								<th scope="col"><strong class="required" title="필수항목">*</strong>비밀번호</th>
+								<td data-title="비밀번호">
+									<label for="password">비밀번호</label>
+									<input class="w50" type="text" id="password" name="password" title="비밀번호">								
+								</td>
+							</tr>
+							<tr>
+								<th scope="col"><strong class="required" title="필수항목">*</strong>비밀번호 확인</th>
+								<td data-title="비밀번호 확인">
+									<label for="password2">비밀번호 확인</label>
+									<input class="w50" type="text" id="password2" name="password2" title="비밀번호 확인">								
+								</td>
+
+								<th scope="col"><strong class="required" title="필수항목">*</strong>휴대전화</th>
+								<td data-title="휴대전화">
+									<label for="phone">휴대전화</label>
+									<select class="select w30" id="phone1" title="휴대전화">
+										<option value="선택">선택</option>
+										<option value="010"  selected="selected">010</option>
+										<option value="019">019</option>
+									</select>
+									<input type="tel" class="w30" name="phone2" id="phone2" maxlength="4" size="4" title="휴대폰중간자리" placeholder="6281">
+									<input type="tel" class="w30" name="phone3" id="phone3" maxlength="4" size="4" title="휴대폰끝자리" placeholder="9978">
+								</td>
+								
+							</tr>
+							<tr>
+							<th scope="col"><strong class="required" title="필수항목">*</strong>이메일</th>
+									<td data-title="이메일" colspan="3">
+									<label for="emali">이메일</label>
+									<input type="email" class="w20" name="emali" id="email1" maxlength="4" size="4" title="이메일아이디" placeholder="code123">@
+									<input type="email" class="w20" name="emali" id="email2" maxlength="4" size="4" title="이메일 주소 직접입력" placeholder="naver.com">
+									<select class="select w30" id="email3" title="이메일 도메인 분류 선택">
+										<option value="사업연도" selected="selected">::이메일주소::</option>
+											<option value="naver.com">naver.com</option>
+											<option value="daum.net">daum.net</option>
+											<option value="hotmail.com">hotmail.com</option>
+											<option value="nate.com">nate.com</option>
+											<option value="yahoo.co.kr">yahoo.co.kr</option>
+											<option value="paran.com">paran.com</option>
+											<option value="empas.com">empas.com</option>
+											<option value="dreamwiz.com">dreamwiz.com</option>
+											<option value="freechal.com">freechal.com</option>
+											<option value="lycos.co.kr">lycos.co.kr</option>
+											<option value="korea.com">korea.com</option>
+											<option value="gmail.com">gmail.com</option>
+											<option value="hanmir.com">hanmir.com</option>								
+										</select>
+								</td>						
+								
+							</tr>
+							</tbody>
+						</table>        
+					</div>
+				</div>
+		</section>
+					
+				
+			<section>
+				<div class="sub_section">
+					<h4 class="sub_heading"><span>재직정보</span></h4>
+					<div class="basic_tb t_row">
+						<table>
+							<caption>
+							   기본정보 등록에 관련된 정보를 입력하는 테이블입니다.
+							</caption>
+							<colgroup>
+								<col style="width:15%;">
+								<col style="width:35%;">
+								<col style="width:15%;">
+								<col style="width:35%;">
+							</colgroup>
+							<tbody>
+							<tr>
+								<th scope="col"><strong class="required" title="필수항목">*</strong>소속기관명</th>
+								<td data-title="소속기관명">
+									<label for="company">소속기관명</label>
+									<input class="w50" type="text" id="company" name="company" title="소속기관명" placeholder="소속기관조회 버튼을 클릭해주세요." disabled>
+									<a href="../pop/01_search_affiliation_new.html" onclick="window.open(this.href, '', 'width=790, height=730'); return false;" class="btn_basic bg_black" role="button">기관조회</a>
+								</td>
+								<th scope="col">연락처(유선)</th>
+								<td data-title="연락처(유선)">
+									<label for="tel">연락처(유선)</label>
+									<select class="select w30" id="tel1" title="유선번호첫째자리">
+										<option value="선택" selected="selected">선택</option>
+										<option value="서울">02</option>
+										<option value="청주">043</option>
+									</select>
+									<input type="tel" class="w30" name="tel2" id="tel2" maxlength="4" size="4" title="유선번호중간자리">
+									<input type="tel" class="w30" name="tel3" id="tel3" maxlength="4" size="4" title="유선번호끝자리">
+								</td>
+								
+							</tr>
+							<tr>
+								<th scope="col"><strong class="required" title="필수항목">*</strong>부서</th>
+								<td data-title="부서">
+									<label for="division">부서</label>
+									<input class="w30" type="text" id="division" name="division" title="부서">
+								</td>
+								<th scope="col"><strong class="required" title="필수항목">*</strong>직위</th>
+								<td data-title="직위">
+									<label for="spot">직위</label>
+									<select class="select w30" id="spot" title="직위">
+										<option value="선택" selected="selected">선택</option>
+										<option value="사장">사장</option>
+										<option value="대리">대리</option>
+									</select>
+								</td>
+							</tr>
+							</tbody>
+						</table>        
+				</div>
+				</div>
+			</section>
+
+				<section>
+					<div class="btn_box_wrap mt20">
+						<a href="01_manage_pi_view_last.html" class="btn_big bg_blue" role="button">수정완료</a>
+						<a href="javascript:history.back()" class="btn_big bg_gray" role="button">이전화면으로</a>
+					</div>
+				</section>
+				
+				
+			
+				
+				
+				
+				
+				
+			</div>
+		</div>
+		
+<footer id="nFooter">
+	</footer>
+	<script>
+		$('#nFooter').load('../footer_area.html')	 
+	</script>
+	</div>
+
+	<!-- 스크립트 영역 공통 (모바일 메뉴 영역) -->
+	<script>
+	(function () {
+		var param = "#gnb_layout",
+			obj = ".item",
+			btn = ".th1_lnk",
+			wrap = "#top_layout",
+			dur = 300,
+			meth = "easeOutCubic";
+		gnb(param, obj, btn, wrap, dur, meth);
+		gnb_open();
+	}());
+	$(function () {
+		$("[data-print=print]").on('click', function () {
+			$("#txt").print({
+				globalStyles: true,
+				mediaPrint: false,
+				iframe: true,
+				noPrintSelector: ".avoid-this",
+				deferred: $.Deferred().done(function () {
+					console.log('Printing done', arguments);
+				})
+			});
+		});
+	});
+	$(".clickOpen > a").on("click", function () {
+		$(this).parent().addClass("on");
+	});
+	$(".clickOpen a.clickClose").on("click", function () {
+		$(this).parents(".clickOpen").removeClass("on");
+	});
+	function gnb_open() {
+		var param = $('#mobile-menu');
+		var str = location.href;
+		var n = 0;
+		var dur = 300; // 애니메이션 진행 속도
+		var meth = "easeOutExpo"; // 애니메이션 진행 타입
+		param.find(".item").hide();
+		param.find(".depth1_ul > .n1 .item").show();
+		param.find(".depth1_ul > .n1 > a").addClass("ov");
+		param.find(".depth1_ul > .n1 > a").attr("title", "하위메뉴 닫기, 확장됨");
+		param.find("a").on("click", function (event) {
+			if (param.is(":animated") && param.find(":animated").size()) {
+				return false;
+			}
+		});
+		function hideMenu() {
+			param
+				.find('.collapse')
+				.hide()
+				.removeClass('ov');
+		}
+		param.find(".depth1_ul>li>a").on("click", function (event) {
+			n = $(this).parent().index();
+			if ($(this)
+					.next()
+					.attr("class")
+					.match("item")) {
+				if ($(this)
+						.next()
+						.find(" .depth2_ul")
+						.size() != 0 && $(this)
+						.next()
+						.find(" .depth2_ul>li")
+						.size() != 0) {
+					if ($(this).next().css("display") == "none") {
+						param
+							.find(".depth1_ul>li>a")
+							.not(n)
+							.removeClass("ov")
+							.next()
+							.stop(true, true)
+							.delay(150)
+							.slideUp(150);
+						param
+							.find(".depth1_ul>li>a")
+							.not(n)
+							.attr("title", "하위메뉴 열기, 축소됨");
+						param
+							.find(".depth1_ul>li>a")
+							.eq(n)
+							.addClass("ov")
+							.next()
+							.stop(true, true)
+							.slideDown(150);
+						param
+							.find(".depth1_ul>li>a")
+							.eq(n)
+							.attr("title", "하위메뉴 닫기, 확장됨");
+					}
+					event.preventDefault();
+				}
+			}
+		});
+		$(window).on('resize', function () {
+			$('.mobile-close').click();
+		});
+	}
+</script>
+</body>
+	
+</html>
