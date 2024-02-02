@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SG-ERS 평가관리시스템 본인인증 팝업창</title>
+<link href="../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../css/login.css" rel="stylesheet" type="text/css">
+<link href="../../css/aos.css" rel="stylesheet" type="text/css">
+<link href="../../css/dingbat_xeicon.css" rel="stylesheet" type="text/css">
+<link href="../../css/footer.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<section>
+	<div class="certification_wrap">
+			  <div class="certification_all">
+			  	<div class="cert_left_box">
+					<div class="cert_left_con">
+						<h3>서비스선택</h3>
+						<ul>
+							<li><a href="#" class="kakao_login cert_on" target="_self" title="카카오간편인증 새창열림">카카오</a></li>
+							<li><a href="#" class="payco_login" target="_self" title="페이코간편인증 새창열림">페이코</a></li>
+							<li><a href="#" class="pass_login" target="_self" title="통신사패스간편인증 새창열림">통신사PASS</a></li>
+							<li><a href="javascript:void(0);" class="naver_login" target="_self" title="네이버간편인증 새창열림">네이버</a></li>
+							<li><a href="javascript:void(0);" class="toss_login" target="_self" title="토스간편인증 새창열림">토스</a></li>
+						</ul>
+						</div>
+				  </div>
+			  	<div class="cert_right_box">
+					<div class="cert_right_con">
+						<div class="cert_right_section">
+							<h3>본인인증 정보 입력</h3>
+							<div class="basic_tb t_row">
+						<table>
+							<caption>
+							  본인인증 정보를 입력하여 인증받는 테이블입니다.
+							</caption>
+							<colgroup>
+								<col style="width:25%;">
+								<col style="width:auto;">
+							</colgroup>
+							<tbody>
+							<tr>
+							   <th scope="col">이름</th>
+								<td data-title="이름">
+								<input class="w100" type="text" id="textWord1" name="textWord" placeholder="홍길동" title="입력란">								
+								</td>
+							</tr>
+							<tr>
+							   <th scope="col">생년월일</th>
+								<td data-title="생년월일">
+								<input class="w100" type="text" id="textWord2" name="textWord" placeholder="19911127" title="입력란">								
+								</td>
+							</tr>
+							<tr>
+							<th scope="col">휴대폰 번호</th>
+							<td data-title="휴대폰 번호">
+							<select class="select w30" id="textWord3" title="연락처앞번호">
+								<option value="010">010</option>
+								<option value="011">011</option>
+								<option value="016">016</option>
+								<option value="017">017</option>
+								<option value="018">018</option>
+								<option value="019">019</option>								
+								</select>		
+								<input style="width:69%;" type="text" id="textWord6_1" name="textWord3_1" placeholder="73819111" title="연락처뒷번번호">
+							</td>
+						</tr>							
+							
+							</tbody>
+						</table>
+					</div>
+						</div>
+						
+						<div class="cert_right_section">
+							<h3>서비스 이용에 대한 동의</h3>
+							<p class="all_check_btn fr">						
+								<label for="checkbox0" class="label_on">
+									<input type="checkbox" id="checkbox0" name="checkbox_box0"><span>전체동의</span>
+								</label>
+							</p>
+								<div class="consent_service">
+									<ul>
+										<li>									
+										<label for="radio1" class="label_on">
+											<input type="radio" id="radio1" name="radio_box1"><span>개인정보 이용 동의</span>
+										</label>
+											<a href="#">보기</a>
+										</li>
+										<li>									
+										<label for="radio2" class="label_on">
+											<input type="radio" id="radio2" name="radio_box2"><span>제3자정보제공동의</span>
+										</label>
+											<a href="#">보기</a>
+										</li>
+										<li>									
+										<label for="radio3" class="label_on">
+											<input type="radio" id="radio3" name="radio_box3"><span>고유식별정보처리동의</span>
+										</label>
+											<a href="#">보기</a>
+										</li>
+									</ul>
+									</div>
+						</div>
+						<div class="cert_right_section">
+							<p class="request_btn"><a href="#" class="btn_big bg_blue" role="button" onclick="opener.location.href='03_04_join_membership.html';self.close()" target="_parent">인증요청</a></p>
+						</div>
+					</div>
+				  </div>
+			  </div>
+			  </div>
+		
+</section>
+
+
+
+
+</body>
+
+</html>
