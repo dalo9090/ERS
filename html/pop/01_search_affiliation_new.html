@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>기관 찾기 팝업창 &gt;한국전파진흥협회 평가관리시스템 팝업창</title>
+<link type="text/css" rel="stylesheet" href="../../css/reset.css">
+<link type="text/css" rel="stylesheet" href="../../css/common.css">
+<link type="text/css" rel="stylesheet" href="../../css/pop.css">
+</head>
+
+<body>
+
+	<section>
+		<div class="comm_pop_box">
+			<div class="pop_box_title">
+				기관 찾기
+			</div>
+			<div class="search_table mb5">
+				<table>
+					<caption>평가위원의 소속을 검색 하실 수 있는 영역입니다.</caption>
+					<colgroup>
+						<col style="width:4%;">
+						<col style="width:10%;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>기관명</th>
+							<td>
+								<label for="textWord1">기관명</label>
+								<input class="w100" type="text" id="textWord1" name="textWord" title="기관명" placeholder="기관명">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="st_search_btn"><a href="#" role="button">검색</a></div>
+			</div>			
+				
+			
+		<div class="pop_box_all">
+					<div class="content_title">
+						<h3>기관조회 목록</h3>
+						<p class="list_total">총<span>3건</span>이 검색되었습니다.</p>
+						<div class="cont_right_box">
+							<p class="fr ml05 number_look">	<label for="sel_Word4_23">목록 개수 보기</label>
+							<select id="pageRow" name="pageRow" title="목록 개수 보기" class="select w100" onchange="fn_recordCountPerPage('/cmn/mber/inttSearchPop.do');">
+								<option value="10" selected="selected">10개씩 보기</option>
+								<option value="20">20개씩 보기</option>
+								<option value="30">30개씩 보기</option>
+								<option value="40">40개씩 보기</option>
+							</select>
+						</p>
+						</div>
+					</div>
+
+					<div class="basic_tb">
+					<table>
+						<caption>기본테이블에 관련된 정보를 확인 하실수 있습니다.</caption>
+						<colgroup>
+							<col style="width:2%;">
+							<col style="width:3%;">
+							<col style="width:3%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">선택</th>
+								<th scope="col">기관명</th>
+								<th scope="col">사업자등록번호</th>
+							</tr>
+						</thead>
+						<tbody>
+								<tr>
+								<td data-title="라디오박스">
+									<label for="radio1" class="label_on">
+										<input type="radio" id="radio1" name="radio_box">
+									</label>
+								</td>
+									<td>(사)방위산업전략포럼</td>
+									<td>2148214604</td>
+								</tr>
+								<tr>
+								<td data-title="라디오박스">
+									<label for="radio2" class="label_on">
+										<input type="radio" id="radio2" name="radio_box">
+									</label>
+								</td>
+									<td>(재)서울창조경제혁신센터</td>
+									<td>3128207294</td>
+								</tr>
+								<tr>
+								<td data-title="라디오박스">
+									<label for="radio3" class="label_on">
+										<input type="radio" id="radio3" name="radio_box">
+									</label>
+								</td>
+									<td>가야대학교 보건대학원(김해)</td>
+									<td>-</td>
+								</tr>
+						</tbody>
+					</table>
+				</div>		
+					
+		</div>
+						<div class="tc mb50">
+				<a href="#" class="btn_big bg_blue" role="button" onclick="window.close()">등록</a>
+				<a href="#" class="btn_big line_gray" role="button" onclick="window.close()">취소</a>
+			</div>
+
+			
+			<div class="pop_close"><a href="#" onclick="window.close()"><span class="infoHidden">닫기</span></a></div>
+	</div>
+</section>
+
+
+
+
+</body>
+
+</html>
