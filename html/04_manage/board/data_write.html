@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>자료실 입력화면 &gt; SG-ERS 평가관리시스템 </title>
+<link type="text/css" rel="stylesheet" href="../../../css/reset.css">
+<link type="text/css" rel="stylesheet" href="../../../css/header.css">
+<link type="text/css" rel="stylesheet" href="../../../css/common.css">
+<link type="text/css" rel="stylesheet" href="../../../css/sub.css"> <!-- 서브에서만 사용 -->
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css">
+<link type="text/css" rel="stylesheet" href="../../../css/footer.css">
+<script type="text/javascript" src="../../../js/jquery-3.4.1.min.js"></script> <!-- 기본 스크립트 -->
+<script type="text/javascript" src="../../../js/common.js"></script> <!-- 공통 스크립트 -->
+<script type="text/javascript" src="../../../js/jquery-migrate-1.4.1.min.js"></script> <!-- 헤더영역1/3 -->
+<script type="text/javascript" src="../../../js/bootstrap.min.js"></script> <!-- 헤더영역2/3 -->
+<script type="text/javascript" src="../../../js/acego.gnb.js"></script> <!-- 헤더영역3/3 -->
+<script type="text/javascript" src="../../../js/drop.js"></script> <!-- 위치정보 열림 -->
+<script type="text/javascript" src="../../../js/pop.js"></script> <!-- 팝업 스크립트-->
+</head>
+
+<body>
+	<!-- skipNavigation-->
+	<div class="skipToContent">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<div id="dimed" style="opacity: 1; display: none;"></div>
+	<!-- //skipNavigation -->
+	<div class="sub_wrap">
+	<header>
+		<div class="gnbWrap">
+			<div class="gnb_top_wrap">
+				<div class="gnb_top">
+				<div class="gnb_top_left">
+				<ul>
+					<li><a href="#">SG-ERS협회</a></li>
+					<li><a href="../../intro/intro.html">평가관리시스템</a></li>
+				</ul>
+					</div>
+				<div class="gnb_top_right">
+				<ul>
+					<li class="gnb_name1"><p><b>유미란</b> 담당자</p></li>
+					<li class="gnb_name2"><p><a href="../01_manage_pi_view.html">개인정보 수정</a></p></li>
+					<li class="gnb_name3"><p><a href="../../intro/intro.html">로그아웃</a></p></li>
+				</ul>
+				</div>
+			</div>
+			</div>
+
+        <div class="gnbArea_wrap"> <!-- 20230201 추가 -->
+        <div class="gnbArea">
+            <h1>
+                <a href="../01_manage_main.html" class="click">
+                    <img src="../../../images/rapa_ci.png" alt="RAPA 한국전파진흥협회 평가관리시스템"></a>
+                </h1>
+                <nav>
+                    <div id="gnb">
+                            <ul class="nav" id="topMenuList">
+								<li class="menuDepth1">
+									<a href="../03_manage_committee_list.html" class="click">평가위원회</a>
+                            	</li>
+                            <li class="menuDepth1">
+                                <a href="../09_manage_afterCommittee_list.html">사후평가</a>
+                            </li>
+                            <li class="menuDepth1">
+                                <a href="../board/notice_list.html" class="click">공지사항</a>
+                            </li>
+                            <li class="menuDepth1">
+                                <a href="../board/data_list.html" class="click">자료실</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- 모바일 메뉴 start  -->
+                <div class="top_wrap">
+                    <ul class="utile_wrap">
+                        <li class="mo">
+                            <button type="button" class="btn-allmenu " data-toggle="modal" data-target="#mobile-menu">
+                                <i><span class="hide">전체메뉴</span></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal_a fade" id="mobile-menu" role="dialog" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                        <div class="mo_top_untill">
+							<ul>
+								<li>
+									유미란<span>담당자</span>
+								</li>
+								<li>
+									<a href="../01_manage_pi_view.html">개인정보수정</a>
+								</li>
+								<li>
+									<span>
+										<a class="openLoginPopup" href="../../intro/intro.html"> 로그아웃</a>
+									</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-content">
+                            <div class="modal-body accordion">
+                                <ul class="depth1_ul n6">
+                                    <li class="th1">
+                                        <a href="../03_manage_committee_list.html" class="th1_lnk n1 icon_none">
+                                            <span>평가위원회</span>
+                                        </a>
+                                    </li>
+                                    <li class="th2">
+                                        <a href="../09_manage_afterCommittee_list.html" class="th1_lnk n1 icon_none">
+                                            <span>사후평가</span>
+                                        </a>
+                                    </li>
+                                    <li class="th3">
+                                        <a href="../board/notice_list.html" class="th1_lnk n1 icon_none">
+                                            <span>공지사항</span>
+                                        </a>
+                                    </li>
+									<li class="th4">
+                                        <a href="../board/data_list.html" class="th1_lnk n1 icon_none">
+                                            <span>자료실</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button type="button" class="mobile-close" data-dismiss="modal" aria-label="Close">
+                                    <span>닫기</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 모바일 메뉴 end  -->
+            </div>
+		</div>
+            <!-- //gnbWrap -->
+        </div>
+		</header>
+	
+	
+	
+		<div class="container_wrap sub_bg">
+			<div class="location_wrap">
+		<div class="location_nav">
+			<ul>
+				<li><a href="#"><i class="xi-home"><span class="text_ind">홈으로</span></i></a></li>
+				<li><a href="#" class="on">자료실</a></li>
+			</ul>
+		</div>
+		<!-- 모바일 전용 위치정보 start -->
+		<div id="mo_location_nav" class="cm-top-menu clearfix">
+				<div class="side-menu-inner clearfix">
+					<a href="#" class="location-to-home-btn" title="메인으로"><i class="xi-home"></i></a>
+						<div class="menu-location location2 cm-drop-menu-box-JS" data-drop-event="click">
+			<button class="cur-location cm-drop-open-btn-JS">
+				<span>자료실</span>
+			</button>
+		</div>
+
+				</div>
+			</div>
+	<!-- 모바일 전용 위치정보 end -->
+		</div>
+			<div class="sub_title_area">
+				<h2>자료실</h2>
+			</div>
+		</div>
+		
+		
+		
+		<div class="container_box_sub">
+			
+			
+			<div class="contents_divide">
+				
+				
+				<!-- 테이블 가로 영역 -->
+				<section>
+					
+					<!-- 상세 내용 -->	
+						
+						<div class="basic_tb t_row">
+							<table>
+								<caption>
+								   자료실에 관련된 정보를 입력하는 테이블입니다.
+								</caption>
+								<colgroup>
+									<col style="width:15%;">
+									<col style="width:35%;">
+									<col style="width:15%;">
+									<col style="width:35%;">
+								</colgroup>
+								<tbody>
+								<tr>																					
+									<th scope="col">제목</th>
+									<td data-title="제목" colspan="3">
+										<label for="title">제목</label>
+										<input class="w100" type="text" id="title" name="title" title="제목">
+									</td>
+								</tr>
+								<tr>
+									<th scope="col">작성자</th>
+									<td data-title="작성자">
+										admin			
+									</td>
+									<th scope="col">조회수</th>
+									<td data-title="조회수">
+										123			
+									</td>
+								</tr>
+								<tr>
+									<th scope="col">내용</th>
+									<td colspan="3" class="conts" data-title="내용">
+										<div class="conts tl">
+											<label for="comment">내용</label>
+											<textarea id="comment" cols="50" rows="10" wrap="hard" required="required" title="내용을 입력해주세요"></textarea>
+
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">첨부파일</th>
+									<td colspan="3" class="file_wrap" data-title="첨부파일">
+										<p class="mr05"><a href="#" class="btn_small bg_gray">파일찾기</a></p>
+										<p><a href="#" class="btn_small bg_gray">삭제</a></p>
+										<!-- 파일목록 -->
+										<div class="file_box clear">
+											<div class="file_title">
+												<p><input type="checkbox"> 첨부파일명</p>
+												<p>크기</p>
+											</div>
+											<ul>
+												<li class="data_none">이곳에 파일을 끌어오세요.</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								</tbody>
+							</table>        
+					</div>
+						
+					<!-- //상세 내용 -->	
+					<div class="tc mt50">
+						<a href="notice_view.html" class="btn_big bg_blue" role="button">등록</a>
+						<a href="data_view.html" class="btn_big line_black" role="button">취소</a>
+					</div>
+					
+				</section>
+				
+				
+				
+			</div>
+		</div>
+		
+	
+	<footer id="nFooter">
+	</footer>
+	<script>
+		$('#nFooter').load('../../footer_area.html')	 
+	</script>
+	</div>
+
+	<!-- 스크립트 영역 공통 (모바일 메뉴 영역) -->
+	<script>
+	(function () {
+		var param = "#gnb_layout",
+			obj = ".item",
+			btn = ".th1_lnk",
+			wrap = "#top_layout",
+			dur = 300,
+			meth = "easeOutCubic";
+		gnb(param, obj, btn, wrap, dur, meth);
+		gnb_open();
+	}());
+	$(function () {
+		$("[data-print=print]").on('click', function () {
+			$("#txt").print({
+				globalStyles: true,
+				mediaPrint: false,
+				iframe: true,
+				noPrintSelector: ".avoid-this",
+				deferred: $.Deferred().done(function () {
+					console.log('Printing done', arguments);
+				})
+			});
+		});
+	});
+	$(".clickOpen > a").on("click", function () {
+		$(this).parent().addClass("on");
+	});
+	$(".clickOpen a.clickClose").on("click", function () {
+		$(this).parents(".clickOpen").removeClass("on");
+	});
+	function gnb_open() {
+		var param = $('#mobile-menu');
+		var str = location.href;
+		var n = 0;
+		var dur = 300; // 애니메이션 진행 속도
+		var meth = "easeOutExpo"; // 애니메이션 진행 타입
+		param.find(".item").hide();
+		param.find(".depth1_ul > .n1 .item").show();
+		param.find(".depth1_ul > .n1 > a").addClass("ov");
+		param.find(".depth1_ul > .n1 > a").attr("title", "하위메뉴 닫기, 확장됨");
+		param.find("a").on("click", function (event) {
+			if (param.is(":animated") && param.find(":animated").size()) {
+				return false;
+			}
+		});
+		function hideMenu() {
+			param
+				.find('.collapse')
+				.hide()
+				.removeClass('ov');
+		}
+		param.find(".depth1_ul>li>a").on("click", function (event) {
+			n = $(this).parent().index();
+			if ($(this)
+					.next()
+					.attr("class")
+					.match("item")) {
+				if ($(this)
+						.next()
+						.find(" .depth2_ul")
+						.size() != 0 && $(this)
+						.next()
+						.find(" .depth2_ul>li")
+						.size() != 0) {
+					if ($(this).next().css("display") == "none") {
+						param
+							.find(".depth1_ul>li>a")
+							.not(n)
+							.removeClass("ov")
+							.next()
+							.stop(true, true)
+							.delay(150)
+							.slideUp(150);
+						param
+							.find(".depth1_ul>li>a")
+							.not(n)
+							.attr("title", "하위메뉴 열기, 축소됨");
+						param
+							.find(".depth1_ul>li>a")
+							.eq(n)
+							.addClass("ov")
+							.next()
+							.stop(true, true)
+							.slideDown(150);
+						param
+							.find(".depth1_ul>li>a")
+							.eq(n)
+							.attr("title", "하위메뉴 닫기, 확장됨");
+					}
+					event.preventDefault();
+				}
+			}
+		});
+		$(window).on('resize', function () {
+			$('.mobile-close').click();
+		});
+	}
+</script>
+</body>
+	
+</html>
