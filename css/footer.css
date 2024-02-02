@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+#nFooter {width:100%; height: 16rem;}
+#footer_wrap {width:100%; background:#ffffff; padding:2rem 0rem; position:absolute; bottom:0rem; border-top:0.1rem solid #ededed;}
+#siteinfo {position:relative; width: 70%; margin:0 auto; }
+.term a {font-size:1.4rem; padding-right:3rem; color:#626262;}
+.term a:after {content: "·"; padding-left:4rem;}
+.term a:last-child:after {display: none;}
+.term a:nth-child(3):after {display: none;}
+.term a:first-child {color:#626262; font-weight: bold;}
+address,
+#siteinfo span,
+.copyright {font-size:1.2em; color:#626262; padding:0.5rem 0rem;}
+.btn_error{float: right; margin-top: -6.7rem; margin-right: 4%;}
+.btn_error a{color: #3a3131; border: solid 0.1rem #ADADAD; padding:1.1rem 3rem; font-size: 1.3rem; border-radius: 0.3rem;}
+.btn_error a:hover{color: #FFE43A;}
+.manager_new_box {position: absolute;top: 1.5rem;right: 1rem;border: 0.1rem solid #E7E7E7; border-radius: 1rem;}
+.manager_new_login i {margin-right:0.5rem;font-size:2rem;vertical-align: middle;color: #626262;}
+.manager_new_login a {display: block;padding: 1rem 1.4rem;font-size:1.3rem;font-weight: bold;color: #626262;}
+@media screen and (max-width: 1160px){
+#siteinfo {width: 80%;}
+#siteinfo span:nth-child(3) {display: none;}
+address, .copyright {padding-right:5rem;}
+}
+@media screen and (max-width: 860px){
+#footer_wrap {padding:1rem 0rem;}
+#siteinfo {text-align: center; width: 100%;}
+.term a {padding:0rem 1rem;}
+.manager_new_login a {padding:0.5rem 1.4rem;}
+.manager_new_box {position: static; width: 50%; margin:0 auto; margin:1rem auto 1rem auto;}
+.btn_error{float: none; margin-top:2rem; margin-right: 0rem;}
+.btn_error a {padding:0.5rem 3rem;}
+	
+}
+@media screen and (max-width: 480px){
+}

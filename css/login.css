@@ -1,0 +1,311 @@
+@charset "euc-kr";
+/* background */
+label { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: polygon(0 0, 0 0, 0 0);}
+label { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: polygon(0 0, 0 0, 0 0);}
+.main_wrap{position: relative; width: 100%; min-height: 100%; background: url("../images/intro/bg.png"), linear-gradient(to bottom, #e4eaff 40rem, #fff 70rem 50%); background-repeat: no-repeat; background-position: center top; background-size:contain;  }
+
+/* header */
+header {position:relative;height: 8rem;z-index: 1;background: transparent;width:100%;max-width:144rem;margin:0 auto; padding-top:3rem;} 
+header h1 a {display: block; background: url("../images/rapa_ci.png") 50% 0% no-repeat; width:34.8rem; height: 2rem; margin:0 auto; background-size:15rem; padding: 2rem;} 
+header h1 img {max-width: 14rem;} 
+
+/* main */
+main{position: relative; width:100%; max-width: 144rem; margin: 0rem auto; text-align: center;}
+main > .contents > .title{text-align: center;margin: 1rem 1rem 1rem 1rem; font-weight: bold;}
+main > .contents > .title p:nth-child(1){font-size:2rem;}
+main > .contents > .title p:nth-child(1) span {color:#1564ee;}
+main > .contents > .title p:nth-child(2){font-size:5.5rem;}
+
+.mainLogin{position: relative;display: inline-block;width: 90%;max-width: 90rem;margin:2rem auto 6rem;background-color: #fff;box-shadow: rgb(21 63 141 / 20%) 0.5rem 0.1rem 1.5rem 0.1rem;color:#fff;text-align: center;padding: 4rem 3rem 3rem 3rem;font-size: 1.5rem;word-break: keep-all;box-sizing: border-box;}
+.mainLogin:before{content:''; position:relative; display:block; top:-1rem; left:0rem; width:20%; min-width:10rem; height: 0.3rem; background-color: #6097ff;}
+.mainLogin p{font-size: 3rem; color:#333; font-weight: 600; text-align: left; line-height: 4rem; padding: 0.5rem 0rem 1rem 0rem;}
+
+.loginPart{margin:0 auto; text-align: center; padding:3rem 0rem;}
+.loginPart > div {position: relative; display: inline-block; width: 30%; margin:1rem; vertical-align: top; }
+.loginPart > div a{display: block; width: 100%; min-height: 38rem; padding:5rem 5rem 5rem 5rem; box-sizing: border-box;  box-shadow: rgb(21 63 141 / 30%) 0.5rem 0.1rem 1.5rem 0.1rem; border-radius: 2rem; border:0.2rem solid #fff;}
+.loginPart > div a:hover {transition:all 0.1s;}
+.loginPart > div .title{font-size: 3rem; color:#000000; font-weight: bold; line-height: normal; padding:1rem 0rem}
+.loginPart > div p {font-size: 1.4rem; color:#000000; line-height: 2.2rem; word-break: keep-all;}
+.loginPart > div .contact {position: relative; display: inline-block; width: 10rem; font-size: 1.8rem; color:#fff; font-weight: bold; padding: 0.5rem 1.7rem 0.6rem 0rem; border-radius: 100rem; margin-top:2rem;}
+.loginPart > div .contact:after { font-family: 'xeicon'; content: '\e93e'; vertical-align: middle; position: absolute; right: 1rem; top:50%; transform: translate(0, -56%); font-size:1.5rem;}
+.loginPart > div:before {content:''; position: relative; display:block; width: 40%; height: 1rem; top:1rem; left:50%; transform: translate(-50%, 0%);}
+
+.loginPart .part01 a,
+.loginPart .part02 a,
+.loginPart .part03 a {background-color: #fff;}
+.loginPart .part01 a:hover,
+.loginPart .part02 a:hover,
+.loginPart .part03 a:hover {border:0.2rem solid #0cecf4;}
+.loginPart .part01 .contact {background-color: #1564ee;}
+.loginPart .part02 .contact {background-color: #1b86bc;}
+.loginPart .part03 .contact {background-color: #8944db;}
+.loginPart .part01 a:before {content: ""; display: block; width:10.7rem; height:10.9rem; margin:0 auto; background:url("../images/intro/icon_01.png") no-repeat;}
+.loginPart .part02 a:before {content: ""; display: block; width:14.6rem; height:10.9rem; margin:0 auto; background:url("../images/intro/icon_02.png") no-repeat;}
+.loginPart .part03 a:before {content: ""; display: block; width:14.6rem; height:10.9rem; margin:0 auto; background:url("../images/intro/icon_03.png") no-repeat;}
+.loginPart .part01:before{background-color: #0cecf4;}
+.loginPart .part02:before{background-color: #1b86bc;}
+.loginPart .part03:before{background-color: #8944db;}
+
+/* login */
+.login-input {position:relative; display: block; width:100%; padding:1rem 0rem; margin-bottom: 0.5rem;}
+.login-input:after{display: block; content: ""; clear: both;}
+.login-input .input-group {margin-bottom: 0rem;line-height: 0rem;}
+.login-input .input-group > input.form-control {position:relative; width:99%; border-radius:0.5rem; z-index: 1; border-bottom: 0.1rem solid #e7e7e7 !important; box-shadow: none; font-size:1.4rem; padding:0.5rem 0rem 0.5rem 4.5rem; margin:0.3rem 0.2rem; box-sizing: border-box; border: none;}
+.inputIcon img {width: 2rem;}
+.login-input .input-group .inputIcon {position: relative;	top:3rem;left:1.6rem; color:#aaaaaa; font-size:1.4rem; z-index: 10;} 
+.input-group .form-control {display: table-cell;float: left; width:100%; height:4.5rem;padding:0.6rem 1.2rem; margin:0rem}
+.login-input .input-group {position: relative; overflow: hidden;}
+.login-input div:nth-child(2) span,
+.login-input div:nth-child(4) span {position: absolute !important; left:1.5rem !important; top:1.4rem !important;}
+.sr-only{position:absolute; width:0.1rem; height:0.1rem; padding:0rem; margin:-0.1rem; overflow: hidden; clip: rect(0,0,0,0); border:0}
+.loginTxt{display: block;padding: 0.5rem 0rem 2.0rem; text-align: center; color:#666; font-size:1.4rem; margin-bottom: 2rem; border-bottom: 0.1rem solid #ebebeb;}
+.loginTxt a{color:#666; font-size:1.4rem;}
+.loginTxt span{padding-right:2rem;}
+.loginTxt a:hover{text-decoration: underline;}
+.loginBtn{display:block; background-color:#2962cd; color:#fff !important; border-radius: 0.3rem;padding: 1rem 4rem 1rem 4rem; transition:background-color 0.3s; width: 99%; box-sizing: border-box; margin:1rem 0.2rem; font-size: 1.8rem; font-weight: 600;}
+.loginBtn:hover{background-color:#102e66; transition:all 0.3s;}
+
+/* sns login */
+.login_box_title {margin: 0.5rem 0rem;display: inline-block;width: 100%;vertical-align: top;padding-left:1rem;} 
+.login_box_title:nth-of-type(even){width: 60%;}
+.login_box_title h5 {text-align: center;padding:0.5rem 0rem 0rem 0rem;font-weight: bold;font-size: 1.5rem;color:#333;}
+.login_box_all .login_box_title:first-child {position: relative;}
+.login_box_all .login_box_title:first-child:after {content: ""; position: absolute; top:0rem; right:0rem; width:0.1rem; height: 100%; background: #cecece;}
+.social_login {margin-top:1rem;text-align: center;}
+.social_login a {width: 7.5rem;height: 7.2rem;margin: 0rem 0.5rem 0rem 0rem;font-size:1.2rem;border:0.1rem solid #fff;box-sizing: border-box;display: inline-block;border-radius: 10rem; text-align: center;padding: 3.5rem 1rem 1rem 1rem;font-weight: bold;}
+.social_login a:hover {border:0.1rem solid #000000; color:#fff;}
+.kakao:hover{color:#000000 !important;}
+.social_login .onepass {height: auto; width:100%!important; text-align:center; margin-bottom: 0.1rem; font-size:1.3rem; border:0.1rem solid #fff; box-sizing: border-box ;display:inline-block; border-radius:10rem; padding:1rem 1rem 1rem 3.3rem; font-weight: bold; margin-top: 1rem;}
+
+/* 대메뉴 탭 영역 */
+.board_tab_box {width:100%; text-align: center; margin-bottom: 3rem; clear: both;}
+.board_tab_box ul li {float: left;}
+.board_tab_box ul li a {display: block;background: #fff; padding:1.5rem 0rem; color:#b2b1b1; font-weight: bold; border-top: 0.1rem solid #cecece; border-bottom: 0.1rem solid #cecece; font-size:1.6rem; border-left: 0.1rem solid #cecece;}
+.board_tab_box ul li:last-child a {border-right:0.1rem solid #cecece;}
+.board_tab_box ul li a.on {background: linear-gradient( 45deg, #7aafff, #3b39c3) !important;color:#fff !important;box-shadow: -0.1rem 0.5rem 2rem rgb(0 79 121 / 40%); border-radius: 0.3rem;}
+.board_tab_box ul li a:focus,
+.board_tab_box ul li a:active {background:linear-gradient( 45deg, #7aafff, #3b39c3) !important; color:#fff !important;box-shadow: -0.1rem 0.5rem 2rem rgb(0 79 121 / 40%); border-radius: 0.3rem;}
+.board_tab_box ul li a:hover {background: #e4e5e7; color:#333;}						
+.board_tab_box li:only-child {width:100%;}
+.board_tab_box li:first-child:nth-last-child(2),                       
+.board_tab_box li:first-child:nth-last-child(2)+li {width:50%;}
+.board_tab_box li:first-child:nth-last-child(3),                       
+.board_tab_box li:first-child:nth-last-child(3)~li {width:33.33%;}
+.board_tab_box li:first-child:nth-last-child(4),                       
+.board_tab_box li:first-child:nth-last-child(4)~li {width:25%;}
+.board_tab_box li:first-child:nth-last-child(5),
+.board_tab_box li:first-child:nth-last-child(5)~li {width:20%;}
+.board_tab_box li:first-child:nth-last-child(6),
+.board_tab_box li:first-child:nth-last-child(6)~li {width:16.66%;}
+.board_tab_box li:first-child:nth-last-child(7),
+.board_tab_box li:first-child:nth-last-child(7)~li {width:14.28%;}
+.board_tab_box li:first-child:nth-last-child(8),                    
+.board_tab_box li:first-child:nth-last-child(8)~li {width:12.50%;}
+
+/* 기본 테이블 */
+.basic_tb {width:100%; border-top:0.2rem solid #7363f7; clear:both; margin-bottom:1rem;}
+.basic_tb table {width:100%;}
+.basic_tb table th {padding: 1.5rem 1.5rem;font-size:1.4rem;background: #f2f2f2;border-right:0.1rem solid #ebebeb;text-align: left;color: #1E1E1E;}
+.basic_tb table th:last-child {border-right:none;}
+.basic_tb table td {position: relative;padding:1rem 1rem;font-size: 1.4rem;text-align: center;border-top:0.1rem solid #ebebeb;border-right:0.1rem solid #ebebeb;border-bottom:0.1rem solid #ebebeb; color: #1E1E1E;}
+.basic_tb table td a:hover {color:#1e75d6;}
+.basic_tb table tr:last-child {border-bottom:0.1rem solid #ebebeb;}
+.choice_name {text-align: left !important;}
+.choice_name a {font-weight: bold;}
+.choice_name a:before {font-size: 2rem; font-family: 'xeicon'; content: "\eb1e"; vertical-align: middle; padding-right:0.5rem; color:#7363f7;}
+.t_row th {border-bottom:0.1rem solid #ebebeb;}
+.t_row td {text-align: left !important; padding:0rem 2rem;}
+.t_row tr:last-child th {border-bottom:none;}
+.in_table {margin:3rem 0rem; border-top:0.2rem solid #5f6b80;}
+.in_table th {background:#f5f9ff !important; padding:1rem 2rem !important;}
+.t_row tr {margin:0rem !important; border:none !important;}
+.basic_tb table td:last-child {border-right:none !important;}
+
+/* 20230224 본인인증 추가 1/2 start */
+.cert_new_box {padding-bottom: 5rem; padding-top:2rem; text-align: center;}
+.cert_new_box h3 {font-size:3.5rem !important; color:#0b0b0d; padding:17rem 0.5rem 1rem 0.5rem; font-weight: bold; text-align: center !important; background: url("../images/intro/cert_new_box_img.png") 50% 0% no-repeat; background-size:15rem;}
+.cert_new_box p {font-size:1.4rem !important; color:#63656b; text-align: center !important; line-height: 2.2rem !important; padding:0.5rem 15rem !important;}
+.cert_new_box a {font-size: 1.8rem;font-weight: 600;color:#fff;background: #4571e9;display: inline-block;margin:0 auto;padding: 1rem 10rem;border-radius: 0.5rem;transition:all 0.5s;margin-top:1rem;}
+.cert_new_box a:hover {background: #193EA4;}
+.cert_text_box {border:0.1rem solid #CACFE3; width:80%; margin:2rem auto; padding:1.5rem 1rem 3rem 1rem; background: #f4f5f9; border-radius: 1rem;} 
+.cert_text_box h4 {position: relative;font-size:1.8rem; color:#103fbd; padding:1rem 0rem 1rem 0rem;} 
+.cert_text_box h4:before {content:'※';font-weight: bold; font-size:2rem; padding-right:0.5rem;} 
+.cert_text_box p {font-size:1.5rem !important; font-weight: 600; color:#000000; padding:0.2rem 0rem !important;}
+/* 20230224 본인인증 추가 1/2 end */
+.consent_service label {position: static; clip-path:none;}
+
+
+/* 아이디 찾기 */
+.cf_email_tit{color: #333; font-size:21px;}
+.certification1 li{width:90%; display: inline-block; position: relative; text-align: center; padding:4rem; margin-bottom: 1rem; border: solid 0.1rem #e1e2e5; vertical-align: top; font-size: 1.4rem; background-color: #f8f8f8;}
+.certification1 li:nth-child(even) {margin-left:1.900rem; min-height: 53.6rem;} 
+.certification1 li .input_wrap {position: relative;}
+.certification1 .input_box,  
+.certification1 li select,
+.certification1 li .txtArea {display: block; padding:1.000rem 1.800rem ; border-radius: 0.300rem; height:4.600rem;box-shadow: 0 0 0 transparent; margin-bottom:0.200rem;}
+.certification1 label {text-align: left; width: 100%; position: relative; font-size:1.5rem; color: #353b43; font-weight: 600; display: block;}
+.certification1_btn{margin-top:3rem; display: inline-block;}
+.day_year_t1{font-size: 1.4rem; margin-left: 0.5rem; margin-right: 1.5rem; line-height: 4.4rem;}
+.day_year_t2{font-size: 1.4rem; margin-left: 0.5rem; margin-right: 1.5rem; line-height: 4.4rem;}
+.day_year_t3{font-size: 1.4rem; margin-left: 0.5rem; line-height: 4.4rem;}
+.information_search{background-color: #fff; border: solid 1px #d7d7d7; width: 99%; margin: 0 auto; padding:20px 0;}
+.information_search dl > dt{color: #333; margin:15px 0; font-weight: 600; font-size: 16px;}
+.information_search dl > dd{background-color: #357afb; width:70%; margin: 0 auto; border-radius:4px; padding:17px; font-size: 16px;}
+.information_search i{color:#909090; font-size:52px;}
+
+@media (max-width:1200px) {
+}
+
+@media screen and (max-width: 1160px){
+header {height: 6rem; padding-top:1rem;}
+header h1 img {width: 3.5rem;}
+main {width: 90%;}
+main > .contents > .title p:nth-child(2) {font-size:5rem;}
+.loginPart {padding-top:0rem;}
+.part04 .request_btn a {width: 87%; padding:2rem 3rem !important;}
+.term a {display: inline-block; padding:0.5rem 1rem 0.5rem 0rem; font-size:1.3rem;}
+.term a:after {display: none;}
+.loginPart .part01:before,
+.loginPart .part02:before,
+.loginPart .part03:before {top: 2.5rem;left: 4.5rem;}
+.loginPart .part01,
+.loginPart .part02,
+.loginPart .part03 {width:94% ;margin:0rem; padding: 0rem 3rem; text-align:left; transition:all 0.5s;}
+.loginPart .part01:before,
+.loginPart .part02:before,
+.loginPart .part03:before {width: 10%;}
+.loginPart .part01 p,
+.loginPart .part02 p,
+.loginPart .part03 p {display: inline-block; text-align: left;}
+.loginPart .part01 p br,
+.loginPart .part02 p br,
+.loginPart .part03 p br {display: none;}
+.loginPart .part01 .contact:before,
+.loginPart .part02 .contact:before,
+.loginPart .part03 .contact:before {display: none;}
+.loginPart .part01 .title,
+.loginPart .part02 .title,
+.loginPart .part03 .title {display: inline-block; font-size: 2.3rem; text-align:left; padding-bottom:0.5rem;}
+.loginPart .part01 .contact,
+.loginPart .part02 .contact,
+.loginPart .part03 .contact{position: absolute; top:3.3rem; right:5rem; width:6.5rem; background:url("../images/arrow_r.png") no-repeat right 0.3rem; padding-top:0.6rem; margin-right: 0rem; margin-top: 0.5rem; color: #aba7a7; font-size:1.4rem; font-weight: normal;}
+.loginPart > div:before {height: 0.3rem;}
+.login-input .input-group > input.form-control {font-size:1.3rem;}
+.loginTxt a {font-size:1.3rem;}
+.loginPart a {padding:1rem 0rem;}
+.loginPart p {display: block !important;}
+.part04 .request_btn {width: 94%;}
+.loginPart > div a {min-height: 10rem; padding:2rem; margin-bottom: 1rem;}
+.loginPart .part01 a:before,
+.loginPart .part02 a:before,
+.loginPart .part03 a:before {display: none;}
+}
+
+@media (max-width:860px) {
+main > .contents > .title img {width: 80%;}
+address {display: none;}
+#nFooter {padding:1rem 0rem;}
+.loginPart .part01, .loginPart .part02, .loginPart .part03{width: 91%;}
+.login_box_title, .login_box_title:nth-of-type(even) {width:100%;display: block;padding-left:0rem;margin-top: 1.5rem;}
+.onepass {width:100% !important;}
+.social_login a {width: 7.6rem;text-align: center;display: inline-block;padding: 3.7rem 0rem 1rem 0rem; font-size: 1.3rem;letter-spacing: -0.5px;margin-bottom: 0.5rem;border-radius: 10rem;}
+.onepass{background-position: 8% 50%;}
+.login_box_title h5 {text-align: left;}
+.copyright {font-size:1.2rem;color:#b5b5b5;padding: 0rem 0rem !important; text-align: center;}
+.btn_error{float: none; margin:0.5rem 0rem; width: 80%; display: inline-flex;}
+.btn_error a{width:63%; text-align: center; padding:0.8rem 0rem; margin:0 auto;}
+.part04 .request_btn a {background: none;}
+.part04 .request_btn {width: 91%;}
+.part04 .request_btn a b {font-size:2.5rem !important;}
+.part04 .request_btn a span,
+.part04 .request_btn a span b {font-size:1.4rem !important;}
+.cert_new_box h3 {font-size:2.8rem !important; padding:14rem 0.5rem 0.5rem 0.5rem !important; background-size:12rem;}
+.cert_new_box p {padding:1rem 2rem !important;}
+.cert_new_box a {font-size: 1.8rem;font-weight: 600;color:#fff;background: #4571e9;display: inline-block;margin:0 auto;padding: 1rem 10rem;border-radius: 0.5rem;transition:all 0.5s;margin-top:1rem;}
+.cert_text_box p {font-size:1.5rem !important; font-weight: 600; color:#000000; padding:0.2rem 0rem !important;}
+	
+.cf_email_tit{color: #333; font-size:21px;}
+.certification1 li{width:90%; display: inline-block; position: relative; text-align: center; padding:4rem; margin-bottom: 1rem; border: solid 0.1rem #e1e2e5; vertical-align: top; font-size: 1.4rem; background-color: #f8f8f8;}
+.certification1 li:nth-child(even) {margin-left:1.900rem; min-height: 53.6rem;} 
+.certification1 li .input_wrap {position: relative;}
+.certification1 .input_box,  
+.certification1 li select,
+.certification1 li .txtArea {display: block; padding:1.000rem 1.800rem ; border-radius: 0.300rem; height:4.600rem;box-shadow: 0 0 0 transparent; margin-bottom:0.200rem;}
+.certification1 label {text-align: left; width: 100%; position: relative; font-size:1.5rem; color: #353b43; font-weight: 600; display: block;}
+.certification1_btn{margin-top:3rem; display: inline-block;}
+.day_year_t1{font-size: 1.4rem; margin-left: 0.5rem; margin-right: 1.5rem; line-height: 4.4rem;}
+.day_year_t2{font-size: 1.4rem; margin-left: 0.5rem; margin-right: 1.5rem; line-height: 4.4rem;}
+.day_year_t3{font-size: 1.4rem; margin-left: 0.5rem; line-height: 4.4rem;}
+.information_search{background-color: #fff; border: solid 1px #d7d7d7; width: 99%; margin: 0 auto; padding:20px 0;}
+.information_search dl > dt{color: #333; margin:15px 0; font-weight: 600; font-size: 16px;}
+.information_search dl > dd{background-color: #357afb; width:70%; margin: 0 auto; border-radius:4px; padding:17px; font-size: 16px;}
+.information_search i{color:#909090; font-size:52px;}
+.certification1 span {float: none; width: 100%;}
+.certification1 input {width: 100%;}
+}
+
+@media (max-width:480px) {
+select, input {height: 3.5rem !important; padding:0rem 1.5rem; font-weight: 600;}
+input[type=checkbox], input[type=radio] {height: 1.5rem!important;}
+table col {display: none;}
+table input {width:100% !important;}
+table select {width:100% !important;}
+table th {display: none;}
+table td {display: block;text-align: left !important;padding-left: 13rem !important;}
+table td:before {content: attr(data-title);display: block;font-size: 1.4rem;width: 9rem;font-weight: 900;text-align: left;position: absolute;left: 1rem; top:50%; transform: translate(0, -50%);}
+#nFooter {padding:1rem; box-sizing: border-box;}
+#siteinfo span,
+address, .copyright {font-size:1.2rem;}
+.loginPart .part01, .loginPart .part02, .loginPart .part03 {width: 85%;}
+.term a {padding:0.3rem 1rem 0.3rem 0rem; font-size:1.2rem;}
+.loginPart .title {font-size:2rem !important; padding:0.5rem 0rem !important;}
+.loginPart p {font-size:1.3rem !important;}
+.contact {font-size:1.4rem !important; background-size:0.9rem !important; width: 6.4rem !important;}
+.inro_login {width: 90%;margin: -10rem auto -6.5rem;}
+.board_tab_box ul li a {padding:1rem 0rem; font-size:1.5rem;}
+.certification_wrap {padding:1rem;}
+.certification_all {overflow: hidden;}
+.certification_all h3 {padding-bottom:1rem; font-size: 1.6rem; float: none;}
+.cert_left_con ul {clear: both;}
+.cert_left_con ul li {display:inline-block; width: 32%;}
+.cert_left_con ul li a {display: block; border-radius: 1rem; padding: 0.7rem 0.7rem 0rem 0.7rem; min-height: 3.5rem; font-size:1.2rem; border:0.1rem solid #E5E5E5; margin-bottom: 0.7rem;}
+.cert_left_con ul li a:before {display: inline-block; background-size: 2.5rem;width: 2.5rem; height: 2.5rem; border-radius: 1rem;overflow: hidden;margin-right:1rem;vertical-align: middle;}
+.cert_left_con ul li .cert_on,
+.cert_left_con ul li a:active,
+.cert_left_con ul li a:focus,
+.cert_left_con ul li a:hover {background: #3c3b93; color:#fff !important; box-shadow: -0.1rem 0.5rem 2rem rgb(0 79 121 / 40%);}
+.cert_right_box  {width:100%; background: #f8f8f8; box-sizing: border-box; padding:1rem;}
+.consent_service {clear:both;}
+.consent_service ul {padding-bottom: 1rem;}
+.consent_service ul li {width:100%; text-align: left; padding:0.1rem 0rem; line-height: 1.5rem; color:#292929;  overflow:hidden; font-size:1.4rem;}
+.consent_service ul li:last-child {border-right:0.1rem solid #ebebeb;}
+.consent_service ul li span {display: inline-block; word-break: break-all; padding:0.5rem 0rem;}
+.consent_service ul li a {border:0.1rem solid #3D3D3D; padding:0.1rem 1rem; border-radius: 0.5rem; font-weight: bold; float: right; margin-top:0.5rem; font-size:1.3rem;}
+.consent_service ul li a:hover {color:#590DC4; border:0.1rem solid #590DC4;}
+.consent_service ul li input[type=radio]{vertical-align: text-top;}
+.all_check_btn {float: right;font-weight: bold; line-height: normal !important; height: auto;}
+.all_check_btn span {font-size:1.5rem; font-weight: bold; vertical-align: middle;}
+.request_btn a {display: block; text-align: center; padding:1rem 0rem; font-size:1.7rem; font-weight: bold; background: #5459c3; color:#fff;}
+.kakao_login:before {content: "";background:url("../images/intro/kakao.png") 0rem 0% no-repeat;}
+.payco_login:before {content: ""; background:url("../images/intro/payco.png") 0rem 0% no-repeat;}
+.pass_login:before {content: ""; background:url("../images/intro/pass.png") 0rem 0% no-repeat;}
+.naver_login:before {content: ""; background:url("../images/intro/naver.png") 0rem 0% no-repeat;}
+.toss_login:before {content: ""; background:url("../images/intro/toss.png") 0rem 0% no-repeat;}
+.onepass_login:before {content: ""; background:url("../images/intro/onepass.png") 0rem 0% no-repeat;}
+.cert_right_section table tr:last-child td select {width:30% !important;}		
+.cert_right_section table tr:last-child td input {width:68% !important;}		
+.cert_new_box h3 {background: none; padding:0.5rem 0.5rem 0.5rem 0.5rem !important;}
+.cert_new_box {padding-top:0rem;}
+.board_tab_box {margin-bottom:0rem;}
+.mainLogin {padding:3rem 2rem 3rem 2rem;}
+.mainLogin:before {left: 0rem;}
+}
+
+
+
+
+
+
+
+
+

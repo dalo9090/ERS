@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* CSS Document */
+@import url(../fonts/font.css);
+
+/* reset */
+html, body {height:100%; font-size:10px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,p,blockquote,th,td{margin:0;padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display:block}
+body{margin:0; padding:0; height: 100%; color:#000;background:#fff; overflow-x:hidden; }
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,nav,menu{font-family: "NotoSans", sans-serif;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none; box-sizing: border-box;}
+fieldset,img{border:0 none;vertical-align:middle; }
+dl,ul,ol,menu,li{list-style:none; list-style-type:none; }
+ul:after, ol:after {display:block; height:0; content:""; float:none; clear:both; }
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+address,caption,cite,code,dfn,em,var{font-style:normal !important;font-size:0.8125rem;}
+a{color: inherit;text-decoration:none;background:transparent;transition:all 0.3s;}
+a:focus,a:active,a:hover{text-decoration:none}
+table{border-collapse:collapse;border-spacing:0;width:100%;}
+th,td{padding:0; word-break:break-all; }
+img { border:0 none; vertical-align:middle; }
+/*
+	*,*:before,*:after {-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+*/
+legend,.blind {overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:100px;white-space:nowrap}
+caption{overflow:hidden;width:0;height:0;font-size:0;line-height:0}
+.clear:after{content:'';display:block;clear:both}
+.hide{overflow:hidden;position:absolute;left:-9999px;width:0 !important;height:0 !important;font-size:0 !important;line-height:0 !important;margin:0 !important;padding:0 !important}
+
+/* form */
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder,
+textarea::-moz-placeholder,
+input::-moz-placeholder,
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder {color:#888}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{height:auto}
+select{-webkit-appearance:none;
+-moz-appearance: none;
+appearance: none;
+}
+select::-ms-expand {display:none !important}
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=number],
+input[type=email],
+input[type=url]{line-height:1;height: 3rem;padding: 0rem 0rem 0rem 1rem;border:0.100rem solid #e1e2e2;-webkit-appearance:none !important;background:#fff;color:#4d4d4d;font-size: 1.4rem;vertical-align: middle;} /* 20211223 수정 */
+input[type=button],
+input[type=submit]{cursor: pointer;}
+input[type=file]{line-height:1;padding:0.600rem 1.000rem 0.700rem;border:0.100rem solid #e5e5e5;background:#fff;color:#4d4d4d;cursor:pointer;font-size:0.875rem}
+input[type=text]:read-only,
+input[type=password]:read-only,
+input[type=tel]:read-only,
+input[type=number]:read-only,
+input[type=email]:read-only,
+input[type=url]:read-only,
+input[type=file]:read-only{border:0.100rem solid #e1e2e2;color:#4d4d4d; font-size:1.3rem} /* 20211223 수정 */
+input[readonly],input[disabled]{border:0.100rem solid #e1e2e2;color:#4d4d4d; background: #e9e9e9;}
+input[type=checkbox]{width:1.500rem;height:1.500rem;margin-right:0.300rem; vertical-align:middle; cursor: pointer;}
+input[type=radio]{width:1.500rem;height:1.500rem;margin-right:0.300rem; vertical-align:middle; margin-top:0rem; cursor: pointer;} /* 20230126 수정*/
+input[type=radio]{vertical-align: middle}
+select{width: 100%;height: 3rem;padding: 0.4rem 2.300rem 0.300rem 1rem;border: 0.100rem solid #e2e2e2;-webkit-border-radius:0;border-radius:0;font-size: 1.4rem;color:#333;vertical-align:middle;background:#fff url("../images/common/bg_selectbox_arrow.png") 98% no-repeat;} 
+select::-ms-expand {
+display: none;
+}
+
+select[disabled] {border:0.100rem solid #e5e5e5;background:#f1f1f1;color:#4d4d4d}
+textarea{width:100%;padding:0.500rem 0.700rem;font-size: 1.3rem;color:#4d4d4d;border:0.100rem solid #e1e2e2; overflow-x: hidden}
+button{cursor:pointer;border: 0; background-color:transparent;}
+area:focus { /* outline: 0; */ }
+
+
+@media screen and (max-width: 1160px){
+	/*html {font-size:9px;}*/
+}
+
+@media screen and (max-width: 860px){
+	/*html {font-size:8px;}*/
+}
+
+
+
