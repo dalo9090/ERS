@@ -1,0 +1,492 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>공지사항 목록화면 &gt; SG-ERS 평가관리시스템</title>
+<link type="text/css" rel="stylesheet" href="../../../css/reset.css">
+<link type="text/css" rel="stylesheet" href="../../../css/header.css">
+<link type="text/css" rel="stylesheet" href="../../../css/common.css">
+<link type="text/css" rel="stylesheet" href="../../../css/sub.css"> <!-- 서브에서만 사용 -->
+<link type="text/css" rel="stylesheet" href="../../../css/contents.css">
+<link type="text/css" rel="stylesheet" href="../../../css/footer.css">
+<script type="text/javascript" src="../../../js/jquery-3.4.1.min.js"></script> <!-- 기본 스크립트 -->
+<script type="text/javascript" src="../../../js/common.js"></script> <!-- 공통 스크립트 -->
+<script type="text/javascript" src="../../../js/jquery-migrate-1.4.1.min.js"></script> <!-- 헤더영역1/3 -->
+<script type="text/javascript" src="../../../js/bootstrap.min.js"></script> <!-- 헤더영역2/3 -->
+<script type="text/javascript" src="../../../js/acego.gnb.js"></script> <!-- 헤더영역3/3 -->
+<script type="text/javascript" src="../../../js/drop.js"></script> <!-- 위치정보 열림 -->
+<script type="text/javascript" src="../../../js/pop.js"></script> <!-- 팝업 스크립트-->
+</head>
+
+<body>
+	<!-- skipNavigation-->
+	<div class="skipToContent">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<div id="dimed" style="opacity: 1; display: none;"></div>
+	<!-- //skipNavigation -->
+	<div class="sub_wrap">
+	<header>
+		<div class="gnbWrap">
+<div class="gnb_top_wrap">
+				<div class="gnb_top">
+				<div class="gnb_top_left">
+				<ul>
+					<li><a href="#">SG-ERS협회</a></li>
+					<li><a href="../../01_intro/01_intro.html">평가관리시스템</a></li>
+				</ul>
+					</div>
+				<div class="gnb_top_right">
+				<ul>
+					<li class="gnb_name1"><p><b>유가영</b> 관리자</p></li>
+					<li class="gnb_name2"><p><a href="../04_admin_pi_view.html">개인정보 수정</a></p></li>
+					<li class="gnb_name3"><p><a href="../../01_intro/01_intro.html">로그아웃</a></p></li>
+				</ul>
+				</div>
+			</div>
+			</div>			
+			 <div class="gnbArea_wrap"> <!-- 20230201 추가 -->
+        <div class="gnbArea">
+            <h1>
+                <a href="../01_admin_main.html" class="click">
+                    <img src="../../../images/rapa_ci.png" alt="RAPA 한국전파진흥협회 평가관리시스템"></a>
+                </h1>
+                <nav>
+                    <div id="gnb">
+                            <ul class="nav" id="topMenuList">
+                            <li class="menuDepth1">
+                                <a href="../06_admin_committee_list.html">평가위원회</a>
+                            </li>
+                            <li class="menuDepth1">
+                                <a href="../10_admin_afterCommittee_list.html">사후평가</a>
+                            </li>
+                            <li class="menuDepth1">
+                                <a href="../13_admin_member_list.html">평가위원 관리</a>
+                            </li>
+							<li class="menuDepth1">
+								<a href="../board/notice_list.html" class="click">공지사항</a>
+							</li>
+                            <li class="menuDepth1">
+                                <a href="../board/data_list.html" class="click">자료실</a>
+                            </li>
+                            <li class="menuDepth1">
+                                <a href="../97_01_management.html" class="click">관리</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- 모바일 메뉴 start  -->
+                <div class="top_wrap">
+                    <ul class="utile_wrap">
+                        <li class="mo">
+                            <button type="button" class="btn-allmenu " data-toggle="modal" data-target="#mobile-menu">
+                                <i><span class="hide">전체메뉴</span></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal_a fade" id="mobile-menu" role="dialog" style="display: none;">
+                    <div class="modal-dialog" role="document">
+                        <div class="mo_top_untill">
+							<ul>
+								<li>
+									유가영<span>관리자</span>
+								</li>
+								<li>
+									<a href="../04_admin_pi_view.html">개인정보수정</a>
+								</li>
+								<li>
+									<span>
+										<a class="openLoginPopup" href="../../01_intro/01_intro.html"> 로그아웃</a>
+									</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-content">
+                            <div class="modal-body accordion">
+                                <ul class="depth1_ul n6">
+                                    <li class="th1">
+                                        <a href="../06_admin_committee_list.html" class="th1_lnk n1 icon_none">
+                                            <span>평가위원회</span>
+                                        </a>
+                                    </li>
+									<li class="th2 n2">
+                                        <a href="../10_admin_afterCommittee_list.html" class="th1_lnk n1 icon_none">
+                                            <span>사후평가</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="th3">
+                                        <a href="../13_admin_member_list.html" class="th1_lnk n1">
+                                            <span>평가위원 관리</span>
+                                        </a>
+                                    </li>
+									<li class="th4 n4">
+                                        <a href="../board/notice_list.html" class="th1_lnk n1 icon_none">
+                                            <span>공지사항</span>
+                                        </a>
+                                    </li>
+									<li class="th5 n5">
+                                        <a href="../board/data_list.html" class="th1_lnk n1 icon_none">
+                                            <span>자료실</span>
+                                        </a>
+                                    </li>
+                                    <li class="th6 n6">
+                                        <a href="#" class="th1_lnk n1 icon_none">
+                                            <span>관리</span>
+                                        </a>
+										<div class="item" style="display: none;">
+                                                <div class="gnb-depth"> <ul class="depth2_ul">
+                                                    <li>
+                                                        <a href="../98_kakaoTalk.html" class="accessDeniedHeader icon_none">
+                                                            <span>메일/카카오톡 발송</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="../20_admin_log.html" class="accessDeniedHeader icon_none">
+                                                            <span>로그조회</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="../17_admin_as_list.html" class="accessDeniedHeader icon_none">
+                                                            <span>AS접수</span>
+                                                        </a>
+                                                    </li>
+													<li>
+														<a href="../22_01_admin_user_view.html" class="accessDeniedHeader icon_none">
+                                                            <span>사용자관리</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="../23_01_admin_code_view.html" class="accessDeniedHeader icon_none">
+                                                            <span>코드관리</span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+									
+                                </ul>
+                                <button type="button" class="mobile-close" data-dismiss="modal" aria-label="Close">
+                                    <span>닫기</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 모바일 메뉴 end  -->
+            </div>
+			</div>
+            <!-- //gnbWrap -->
+        </div>
+		</header>
+	
+	
+	
+		<div class="container_wrap sub_bg">
+				
+		<div class="location_wrap">
+		<div class="location_nav">
+			<ul>
+				<li><a href="#"><i class="xi-home"><span class="text_ind">홈으로</span></i></a></li>
+				<li><a href="#" class="on">공지사항</a></li>
+			</ul>
+		</div>
+		<!-- 모바일 전용 위치정보 start -->
+		<div id="mo_location_nav" class="cm-top-menu clearfix">
+				<div class="side-menu-inner clearfix">
+					<a href="#" class="location-to-home-btn" title="메인으로"><i class="xi-home"></i></a>
+						<div class="menu-location location2 cm-drop-menu-box-JS" data-drop-event="click">
+			<button class="cur-location cm-drop-open-btn-JS">
+				<span>공지사항</span>
+			</button>
+		</div>
+
+				</div>
+			</div>
+	<!-- 모바일 전용 위치정보 end -->
+		</div>
+			<div class="sub_title_area">
+				<h2>공지사항</h2>
+			</div>
+		</div>
+	
+		
+		<div class="container_box_sub">
+			
+			
+			<div class="contents_divide">
+
+				<!-- 검색영역 -->
+				<section>
+					<div class="search_table_A">
+						<table>
+							<caption>자료실에 관한 정보를 검색하는 영역입니다.</caption>
+							<colgroup>
+								<col style="width:15%;">
+								<col style="width:85%;">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>제목</th>
+									<td>
+										<label for="textWord1">제목</label>
+										<input class="w100" type="text" id="textWord1" name="textWord" title="제목" placeholder="제목을 입력해주세요.">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="st_search_btn_A"><a href="#" role="button">검색</a></div>
+					</div>			
+				</section>
+				<!-- //검색영역 -->
+				
+				
+				<!-- 테이블 가로 영역 -->
+				<section>
+					<div class="content_title1">
+						<h3 class="title_list">공지사항 목록</h3>
+						<p class="list_total">총<span>6건</span>이 검색되었습니다.</p>
+						<div class="cont_right_box">
+							<a href="notice_write.html" class="btn_basic bg_blue" role="button">등록</a>
+									<p class="fr ml05 number_look">	<label for="sel_Word4_23">목록 개수 보기</label>
+										<select class="select w100" id="sel_Word4_23" title="목록 개수 보기">
+											<option value="상태" selected="selected">10개씩 보기</option>
+											<option value="progress">20개씩 보기</option>
+											<option value="stop">30개씩 보기</option>
+											<option value="progress">40개씩 보기</option>
+										</select>
+									</p>
+						</div>
+
+					</div>
+
+					<div id="result">
+
+						<div class="board_list">
+
+							<!-- board_list -->
+							<div class="toggle">
+								<a href="notice_view.html" title="상세보기">
+									<div class="txt">
+										<p class="title"><span class="differ_1">전체</span>[사업공고 의견수렴] '23년 차세대방송 성장기반조성(뉴테크융합) 지정과제 RFP 의견수렴(~12/28(수)까지)</p>
+										<div class="meta">
+											<dl class="tit_con">
+													<dt class="tit">등록자</dt>
+													<dd class="con">관리자</dd>
+												</dl>
+											<dl class="tit_con">
+												<dt class="tit">조회수</dt>
+												<dd class="con">12</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="date">2022-12-27</div>
+								</a>
+							</div>
+							
+							<div class="toggle">
+								<a href="notice_view.html" title="상세보기">
+									<div class="txt">
+										<p class="title"><span class="differ_2">담당자</span>한국전파진흥협회 직원 채용공고</p>
+										<div class="meta">
+											<dl class="tit_con">
+													<dt class="tit">등록자</dt>
+													<dd class="con">관리자</dd>
+												</dl>
+											<dl class="tit_con">
+												<dt class="tit">조회수</dt>
+												<dd class="con">12</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="date">2022-12-27</div>
+								</a>
+							</div>
+							
+							<div class="toggle">
+								<a href="notice_view.html" title="상세보기">
+									<div class="txt">
+										<p class="title"><span class="differ_1">전체</span>한국전파진흥협회 직원 채용공고</p>
+										<div class="meta">
+											<dl class="tit_con">
+													<dt class="tit">등록자</dt>
+													<dd class="con">관리자</dd>
+												</dl>
+											<dl class="tit_con">
+												<dt class="tit">조회수</dt>
+												<dd class="con">12</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="date">2022-12-27</div>
+								</a>
+							</div>
+							
+							<div class="toggle">
+								<a href="notice_view.html" title="상세보기">
+									<div class="txt">
+										<p class="title"><span class="differ_1">전체</span>[모집안내] 2022년도 하반기 지역방송 교육 및 인력양성 지원 안내</p>
+										<div class="meta">
+											<dl class="tit_con">
+													<dt class="tit">등록자</dt>
+													<dd class="con">관리자</dd>
+												</dl>
+											<dl class="tit_con">
+												<dt class="tit">조회수</dt>
+												<dd class="con">12</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="date">2022-12-27</div>
+								</a>
+							</div>
+									
+						</div>
+						<!-- // board_list -->
+
+					</div>	
+				</section>
+				
+				
+				
+			
+				<section>
+					<div class="paging tc">
+						<a href="#" class="page_first"><span class="hidden">맨앞으로</span></a>
+						<a href="#" class="page_prev"><span class="hidden">이전</span></a>
+						<strong>1</strong>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+						<a href="#" class="pagen_ext"><span class="hidden">다음</span></a>
+						<a href="#" class="page_last"><span class="hidden">마지막</span></a>
+					</div>
+				</section>
+				
+				
+				
+				
+			</div>
+		</div>
+		
+	
+	<footer id="nFooter">
+	</footer>
+	<script>
+		$('#nFooter').load('../../footer_area.html')	 
+	</script>
+	</div>
+
+
+	<!-- 스크립트 영역 공통 (모바일 메뉴 영역) -->
+	<script>
+	(function () {
+		var param = "#gnb_layout",
+			obj = ".item",
+			btn = ".th1_lnk",
+			wrap = "#top_layout",
+			dur = 300,
+			meth = "easeOutCubic";
+		gnb(param, obj, btn, wrap, dur, meth);
+		gnb_open();
+	}());
+	$(function () {
+		$("[data-print=print]").on('click', function () {
+			$("#txt").print({
+				globalStyles: true,
+				mediaPrint: false,
+				iframe: true,
+				noPrintSelector: ".avoid-this",
+				deferred: $.Deferred().done(function () {
+					console.log('Printing done', arguments);
+				})
+			});
+		});
+	});
+	$(".clickOpen > a").on("click", function () {
+		$(this).parent().addClass("on");
+	});
+	$(".clickOpen a.clickClose").on("click", function () {
+		$(this).parents(".clickOpen").removeClass("on");
+	});
+	function gnb_open() {
+		var param = $('#mobile-menu');
+		var str = location.href;
+		var n = 0;
+		var dur = 300; // 애니메이션 진행 속도
+		var meth = "easeOutExpo"; // 애니메이션 진행 타입
+		param.find(".item").hide();
+		param.find(".depth1_ul > .n1 .item").show();
+		param.find(".depth1_ul > .n1 > a").addClass("ov");
+		param.find(".depth1_ul > .n1 > a").attr("title", "하위메뉴 닫기, 확장됨");
+		param.find("a").on("click", function (event) {
+			if (param.is(":animated") && param.find(":animated").size()) {
+				return false;
+			}
+		});
+		function hideMenu() {
+			param
+				.find('.collapse')
+				.hide()
+				.removeClass('ov');
+		}
+		param.find(".depth1_ul>li>a").on("click", function (event) {
+			n = $(this).parent().index();
+			if ($(this)
+					.next()
+					.attr("class")
+					.match("item")) {
+				if ($(this)
+						.next()
+						.find(" .depth2_ul")
+						.size() != 0 && $(this)
+						.next()
+						.find(" .depth2_ul>li")
+						.size() != 0) {
+					if ($(this).next().css("display") == "none") {
+						param
+							.find(".depth1_ul>li>a")
+							.not(n)
+							.removeClass("ov")
+							.next()
+							.stop(true, true)
+							.delay(150)
+							.slideUp(150);
+						param
+							.find(".depth1_ul>li>a")
+							.not(n)
+							.attr("title", "하위메뉴 열기, 축소됨");
+						param
+							.find(".depth1_ul>li>a")
+							.eq(n)
+							.addClass("ov")
+							.next()
+							.stop(true, true)
+							.slideDown(150);
+						param
+							.find(".depth1_ul>li>a")
+							.eq(n)
+							.attr("title", "하위메뉴 닫기, 확장됨");
+					}
+					event.preventDefault();
+				}
+			}
+		});
+		$(window).on('resize', function () {
+			$('.mobile-close').click();
+		});
+	}
+</script>
+</body>
+	
+</html>

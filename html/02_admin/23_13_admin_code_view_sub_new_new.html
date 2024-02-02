@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>팝업창관리 수정 &gt; SG-ERS 평가관리시스템</title>
+<link type="text/css" rel="stylesheet" href="../../css/reset.css">
+<link type="text/css" rel="stylesheet" href="../../css/header.css">
+<link type="text/css" rel="stylesheet" href="../../css/common.css">
+<link type="text/css" rel="stylesheet" href="../../css/sub.css"> <!-- 서브에서만 사용 -->
+<link type="text/css" rel="stylesheet" href="../../css/contents.css">
+<link type="text/css" rel="stylesheet" href="../../css/footer.css">
+<script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script> <!-- 기본 스크립트 -->
+<script type="text/javascript" src="../../js/common.js"></script> <!-- 공통 스크립트 -->
+<script type="text/javascript" src="../../js/jquery-migrate-1.4.1.min.js"></script> <!-- 헤더영역1/3 -->
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script> <!-- 헤더영역2/3 -->
+<script type="text/javascript" src="../../js/acego.gnb.js"></script> <!-- 헤더영역3/3 -->
+<script type="text/javascript" src="../../js/drop.js"></script> <!-- 위치정보 열림 -->
+<script type="text/javascript" src="../../js/pop.js"></script> <!-- 팝업 스크립트-->
+</head>
+
+<body>
+	<!-- skipNavigation-->
+	<div class="skipToContent">
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<div id="dimed" style="opacity: 1; display: none;"></div>
+	<!-- //skipNavigation -->
+	<div class="sub_wrap">
+	<header>
+	</header>
+	<script>
+	$("header").load("../navi_area_admin.html")	 
+	</script>
+	
+	
+	
+		<div class="container_wrap sub_bg">
+			<div class="location_wrap">
+		<div class="location_nav">
+			<ul>
+				<li><a href="#"><i class="xi-home"><span class="text_ind">홈으로</span></i></a></li>
+				<li><a href="#">관리</a></li>
+				<li><a href="#" class="on">팝업창관리 수정</a></li>
+			</ul>
+		</div>
+		<!-- 모바일 전용 위치정보 start -->
+		<div id="mo_location_nav" class="cm-top-menu clearfix">
+				<div class="side-menu-inner clearfix">
+					<a href="#" class="location-to-home-btn" title="메인으로"><i class="xi-home"></i></a>
+						<div class="menu-location location2 cm-drop-menu-box-JS" data-drop-event="click">
+			<button class="cur-location cm-drop-open-btn-JS">
+				<span>팝업창관리 수정</span>
+				<i class="xi-angle-down-min arrow"></i>
+			</button>
+			<ul class="location-menu-con cm-drop-list-JS" style="display: none;">
+				<li><a href="./98_kakaoTalk.html"><span>메일/카카오톡 발송</span></a></li>
+				<li class="on"><a href="./20_admin_log.html"><span>팝업창관리 수정</span></a></li>
+			</ul>
+		</div>
+
+				</div>
+			</div>
+	<!-- 모바일 전용 위치정보 end -->
+		</div>
+			<div class="sub_title_area">
+				<h2>팝업창관리 수정</h2>
+			</div>
+		
+		
+		
+		
+		<div class="container_box_sub">
+			<div class="contents_divide">
+				
+				
+				
+				
+	<section>
+					<div class="content_title">
+						<h3 class="title_list">팝업창관리 수정</h3>
+						<div class="cont_right_box">
+<p><strong class="required" title="필수항목">*</strong>필수입력 항목입니다.</p>
+</div>
+					</div>
+		
+					<div class="basic_tb t_row">
+					<table>
+						<caption>
+							팝업창관리 수정 정보를 확인 하실 수 있는 테이블입니다.
+						</caption>
+						<colgroup>
+							<col style="width:20%;">
+							<col style="width:80%;">
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="col">등록 형식</th>
+							<td data-title="공개분류">
+									<label for="radio09-1" class="label_on">
+										<input type="radio" id="radio09-1" name="radio_box" onclick="location.href='./23_13_admin_code_view_sub_new_new_text.html'">
+										HTML입력 형식
+									</label>
+									<label for="radio09-2" class="label_on">
+										<input type="radio" id="radio09-2" name="radio_box" onclick="location.href='./23_13_admin_code_view_sub_new_new.html'" checked>
+										이미지등록 형식
+									</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="col">공개분류</th>
+							<td data-title="공개분류">
+									<label for="radio10-1" class="label_on">
+										<input type="checkbox" id="radio10-1" name="radio_box">
+										전체
+									</label>
+									<label for="radio10-2" class="label_on">
+										<input type="checkbox" id="radio10-2" name="radio_box">
+										평가위원
+									</label>
+									<label for="radio10-3" class="label_on">
+										<input type="checkbox" id="radio10-3" name="radio_box">
+										담당자
+									</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="col">게시 기간</th>
+							<td data-title="게시 기간">
+								<label for="textWord4">게시 기간</label>
+								<input type="text" id="textWord4_1" class="calendar_size" name="textWord" title="게시 시작일" placeholder="게시 시작일">
+								<a href="#"><img src="../../images/sub/icon_calendar.png" alt="달력"></a>
+								<span class="pl10 pr10 bold fs_1_5">~</span>
+								<label for="textWord4_2">게시 기</label>
+								<input type="text" id="textWord4_2" class="calendar_size" name="textWord" title="게시 종료일" placeholder="게시 종료일">
+								<a href="#"><img src="../../images/sub/icon_calendar.png" alt="달력"></a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="col">팝업명</th>
+							<td data-title="팝업명">
+								<label for="textWord2">팝업명</label>
+								<input class="w50" type="text" id="textWord2" name="textWord" title="팝업명" placeholder="평가참석 동의여부 처리안내 방침 팝업창">
+							</td>
+							</tr>
+						<tr>
+							<th scope="col">팝업 이미지등록</th>
+							<td data-title="팝업 상세내용"><input type="file">
+							<div class="note_helpbox2 clear">
+							<p>팝업 이미지 <b class="f_blue">등록 유형은 jpg, png 파일</b> 형식이며, <b class="f_red">사이즈는 가로350px 세로 450px 크기</b>로 등록해주세요.</p>
+						</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="col">상태</th>
+							<td data-title="상태">			
+														<label for="textWord2">상태</label>
+														<select class="select w200px" id="sel_Word6_1" title="상태">
+															<option value="0" selected="selected">진행</option>
+															<option value="1">중지</option>
+														</select>
+														</td>
+						</tr>
+						</tbody>
+					</table>        
+				</div>			
+				</section>
+				
+				<section>
+					<div class="btn_box_wrap">
+						<a href="23_14_admin_code_view_sub_new.html" class="btn_big bg_blue" role="button">수정완료</a>
+						<a href="../pop/12_view_pop.html" onclick="window.open(this.href, '', 'width=365, height=550'); return false;" target="_blank" title="새창열림" class="btn_big bg_green" role="button">미리보기</a>
+						<a href="23_12_admin_code_view_sub_new.html" class="btn_big bg_gray" role="button">목록으로</a>
+					</div>
+				</section>
+				
+			</div>
+		</div>
+		
+	</div>
+
+	
+
+	<footer id="nFooter">
+	</footer>
+	<script>
+		$('#nFooter').load('../footer_area.html')
+	</script>
+	</div>
+	<!-- 스크립트 영역 공통 (모바일 메뉴 영역) -->
+	<script>
+	(function () {
+		var param = "#gnb_layout",
+			obj = ".item",
+			btn = ".th1_lnk",
+			wrap = "#top_layout",
+			dur = 300,
+			meth = "easeOutCubic";
+		gnb(param, obj, btn, wrap, dur, meth);
+		gnb_open();
+	}());
+	$(function () {
+		$("[data-print=print]").on('click', function () {
+			$("#txt").print({
+				globalStyles: true,
+				mediaPrint: false,
+				iframe: true,
+				noPrintSelector: ".avoid-this",
+				deferred: $.Deferred().done(function () {
+					console.log('Printing done', arguments);
+				})
+			});
+		});
+	});
+	$(".clickOpen > a").on("click", function () {
+		$(this).parent().addClass("on");
+	});
+	$(".clickOpen a.clickClose").on("click", function () {
+		$(this).parents(".clickOpen").removeClass("on");
+	});
+	function gnb_open() {
+		var param = $('#mobile-menu');
+		var str = location.href;
+		var n = 0;
+		var dur = 300; // 애니메이션 진행 속도
+		var meth = "easeOutExpo"; // 애니메이션 진행 타입
+		param.find(".item").hide();
+		param.find(".depth1_ul > .n1 .item").show();
+		param.find(".depth1_ul > .n1 > a").addClass("ov");
+		param.find(".depth1_ul > .n1 > a").attr("title", "하위메뉴 닫기, 확장됨");
+		param.find("a").on("click", function (event) {
+			if (param.is(":animated") && param.find(":animated").size()) {
+				return false;
+			}
+		});
+		function hideMenu() {
+			param
+				.find('.collapse')
+				.hide()
+				.removeClass('ov');
+		}
+		param.find(".depth1_ul>li>a").on("click", function (event) {
+			n = $(this).parent().index();
+			if ($(this)
+					.next()
+					.attr("class")
+					.match("item")) {
+				if ($(this)
+						.next()
+						.find(" .depth2_ul")
+						.size() != 0 && $(this)
+						.next()
+						.find(" .depth2_ul>li")
+						.size() != 0) {
+					if ($(this).next().css("display") == "none") {
+						param
+							.find(".depth1_ul>li>a")
+							.not(n)
+							.removeClass("ov")
+							.next()
+							.stop(true, true)
+							.delay(150)
+							.slideUp(150);
+						param
+							.find(".depth1_ul>li>a")
+							.not(n)
+							.attr("title", "하위메뉴 열기, 축소됨");
+						param
+							.find(".depth1_ul>li>a")
+							.eq(n)
+							.addClass("ov")
+							.next()
+							.stop(true, true)
+							.slideDown(150);
+						param
+							.find(".depth1_ul>li>a")
+							.eq(n)
+							.attr("title", "하위메뉴 닫기, 확장됨");
+					}
+					event.preventDefault();
+				}
+			}
+		});
+		$(window).on('resize', function () {
+			$('.mobile-close').click();
+		});
+	}
+</script>
+</body>
+	
+</html>
